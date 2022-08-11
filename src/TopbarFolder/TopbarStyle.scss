@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@300&family=Source+Code+Pro:wght@300&display=swap");
+
+// global variables
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins;
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
+
+// GLOBAL STYLES
+$shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.301);
+$border: 2px solid rgb(214, 214, 214);
+$cardsj-bg: rgb(224, 223, 230);
+$hover-Color: whitesmoke;
+$hover-Text-Color: #444444;
+$text-Color: rgb(68, 68, 68);
+$special-text-Color: royalblue;
+$special-Color: #4c5eff;
+
+@mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
+  display: flex;
+  justify-content: $justifyProp;
+  align-items: $alignProp;
+  flex-direction: $flexDirection;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==smallPhone {
+    @media only screen and (max-width: 300px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 850px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bigphone {
+    @media only screen and (min-width: 800px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+// topbar section
+section {
+  // navbar container
+  .topbar {
+    @include flexDisplay(space-between, center, row);
+    position: relative;
+    padding: 0 5px;
+    height: 4rem;
+
+    @include responsive(tablet) {
+      padding: 10px 10px;
+    }
+    //  icon
+    h3 {
+      color: #4c5eff;
+    }
+    nav {
+      position: absolute;
+      margin-left: 0;
+      margin-right: 0;
+      left: 0;
+      right: 0;
+      top: 5rem;
+
+      // nav for desktop and tablet view
+      @include responsive(tablet) {
+        position: relative;
+        top: 0;
+        width: 60%;
+        max-width: 500px;
+      }
+
+      ul {
+        // border: 2px solid red;
+        overflow: hidden;
+        transition: all 0.5s linear;
+        @include flexDisplay(space-between, center, column);
+
+
+        // 
+        &.openMenu {
+          height: 200px;
+        }
+        &.closeMenu {
+          height: 0px;
+        }
+
+        @include responsive(tablet) {
+          @include flexDisplay(space-between, center, row);
+          overflow: visible;
+          border: none;
+        }
+
+        li {
+          @include flexDisplay(center, center, row);
+          padding: 10px;
+          border-bottom: 1px solid blue;
+          width: 100%;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          font-weight: 600;
+          &:hover {
+            background-color: royalblue;
+            transform: scale(1.2);
+          }
+          @include responsive(tablet) {
+            border: none;
+            font-weight: 700;
+
+            &:hover {
+              background-color: rgba(65, 105, 225, 0);
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+    }
+    // social media icons
+    .social-media {
+      @include flexDisplay(center, center, column);
+      position: absolute;
+      right: 0;
+      top: 6rem;
+      height: 140px;
+      width: 80px;
+
+      //   desktop and tablet view
+      @include responsive(tablet) {
+        border: none;
+        position: relative;
+        right: 20px;
+        top: 15vh;
+      }
+
+      li {
+        @include flexDisplay(center, center, column);
+        border: 1px solid gray;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        margin-bottom: auto;
+        width: 80%;
+        gap: 20px;
+        padding: 5px 5px 45px 5px;
+
+        .social-icon {
+          color: #4c5eff;
+          font-size: 20px;
+          transition: all 0.2s linear;
+
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+      .social-media-follow-me {
+        @include flexDisplay(center, center, column);
+
+        transform: rotate(90deg);
+        width: 100px;
+        background-color: #4c5eff;
+        padding: 5px 4px;
+
+        p {
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+    .topmenu-icon {
+      display: block;
+
+      .menu-btn {
+        font-size: 50px;
+
+        &:hover {
+          color: royalblue;
+          transform: scale(1.2);
+        }
+      }
+      @include responsive(tablet) {
+        display: none;
+      }
+    }
+  }
+}
