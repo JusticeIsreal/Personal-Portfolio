@@ -16,7 +16,7 @@ function Topbar() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   // useRef declaration
-  const dropMobileMenu = useRef(null);
+ 
 
   // Menu btn click function
   const toggleMenu = () => {

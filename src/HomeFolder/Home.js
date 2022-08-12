@@ -22,7 +22,7 @@ function Home() {
           </div>
         </div>
        
-          <button class="button-29" role="button">
+          <button class="button-29" >
             <h1>{"<Download Cv/>"}</h1>
           </button>
         
