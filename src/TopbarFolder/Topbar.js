@@ -28,7 +28,7 @@ function Topbar() {
   };
 
   return (
-    <section>
+    <section className="first">
       <div className="topbar">
         <h3> Justice </h3>
         <nav>

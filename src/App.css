@@ -1,25 +1,6 @@
-/* .App {
-  margin-top: -4rem;
-  height: 100vh;
-  background: url(/src/images/PortfolioBg.jpg) fixed top;
-  background-repeat: no-repeat;
-  overflow: scroll;
-  background-size: 150%;
-
+.App {
   background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
-
-@media only screen and (min-width: 850px) {
-  .App {
-    height: 100vh;
-    background: url(/src/images/PortfolioBg.jpg) fixed top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-} */
-
-/* @media only screen and (min-width: 1750px) {
-  .eye1, .eye2 {
-  display: none;
-  }
-}  */

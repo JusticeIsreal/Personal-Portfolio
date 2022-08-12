@@ -67,10 +67,12 @@ $special-Color: #4c5eff;
 }
 
 // topbar section
-section {
+.first {
+  // height: 5rem;
+  position: relative;
   .topbar {
     @include flexDisplay(space-between, center, row);
-    position: absolute;
+    // position: absolute;
     padding: 0 5px;
     height: 4rem;
     z-index: 10;
@@ -161,17 +163,18 @@ section {
             &:hover {
               z-index: 5;
               width: 70%;
-              background-color: rgba(255, 255, 255, 0.1);
+              background-color: rgba(255, 255, 255, 0);
               box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
               transform: scale(1.5);
+
               // background-color: #444444;
 
               &::before {
                 content: "";
                 width: 100%;
-                height: 40px;
+                height: 30px;
                 position: absolute;
-                border: 1px solid royalblue;
+                // border: 1px solid royalblue;
                 // border-radius: 5px;
                 // transition: all 0.3s linear;
               }

@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../AboutFolder/About.js";
 import "../HomeFolder/Home.css";
 import cv from "../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 // import { useEffect, useState, useRef } from "react";
@@ -7,7 +8,7 @@ function Home() {
   return (
     <main>
       <div className="i-am">
-        <h3>{"//001.    .     <p> I am </p>"}</h3>
+        <h3>{"//001.    .     <p> I AM </p>"}</h3>
       </div>
       <div className="name">
         <div className="name-details">
@@ -31,6 +32,7 @@ function Home() {
       <div className="i-am">
         <h3>{"<p> Software Developer </p>"}</h3>
       </div>
+      {/* <About /> */}
     </main>
   );
 }
