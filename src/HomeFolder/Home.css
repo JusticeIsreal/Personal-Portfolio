@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
+
+main {
+  position: absolute;
+  opacity: 1;
+  z-index: 4;
+  color: royalblue;
+  width: 100%;
+  font-weight: 600;
+}
+main .i-am {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+@media only screen and (min-width: 750px) {
+  main .i-am {
+    font-size: 20px;
+  }
+}
+main .name {
+  border: 2px solid green;
+  margin-top: 10px;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* CSS */
+}
+@media only screen and (min-width: 850px) {
+  main .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+main .name .name-details {
+  margin-bottom: auto;
+  border: 2px solid red;
+}
+main .name .name-details .h1Tag {
+  margin-left: 20px;
+  font-size: 10px;
+}
+@media only screen and (min-width: 750px) {
+  main .name .name-details .h1Tag {
+    font-size: 30px;
+  }
+}
+main .name .name-details .full-name {
+  margin-left: 30px;
+}
+@media only screen and (min-width: 850px) {
+  main .name .name-details .full-name {
+    margin-left: 40px;
+  }
+}
+main .name .name-details .full-name h3 {
+  font-size: 30px;
+}
+@media only screen and (min-width: 750px) {
+  main .name .name-details .full-name h3 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main .name .name-details .full-name h3 {
+    font-size: 70px;
+  }
+}
+main .name .name-details .full-name h1 {
+  font-size: 45px;
+}
+@media only screen and (min-width: 750px) {
+  main .name .name-details .full-name h1 {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  main .name .name-details .full-name h1 {
+    font-size: 110px;
+  }
+}
+main .name .button-29 {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+main .name .button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+main .name .button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+main .name .button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}/*# sourceMappingURL=Home.css.map */

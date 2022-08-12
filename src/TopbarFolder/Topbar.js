@@ -8,6 +8,7 @@ import reducer from "../Reducer/Reducer";
 
 const initialState = {
   menuShow: false,
+  
 };
 
 // COMPONENT STATR
