@@ -1,6 +1,6 @@
 import React from "react";
 import "../HomeFolder/Home.css";
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
 
 function Home() {
   return (

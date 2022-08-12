@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { useState, useEffect, useRef, useReducer } from "react";
+import { useRef, useReducer } from "react";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { FaFacebookSquare } from "react-icons/fa";
 import "./TopbarStyle.css";

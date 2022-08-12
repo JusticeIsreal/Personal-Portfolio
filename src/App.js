@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Style from "../src/App.css"
 import Banner from "./BannerFolder/Banner";
 import Topbar from "./TopbarFolder/Topbar";
 

@@ -1,9 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import Home from "../HomeFolder/Home";
 import "./BannerStyle.css";
 import "../App.css";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 // import BannerBg from "../images/PortfolioBg.jpg"
 
