@@ -41,9 +41,11 @@ main .i-am {
   }
 }
 main .name {
-  border: 2px solid green;
-  margin-top: 10px;
+  padding-right: 20px;
+  margin-top: 50px;
   gap: 10px;
+  width: 100%;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,15 +56,21 @@ main .name {
   main .name {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-left: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-right: 50px;
   }
 }
 main .name .name-details {
+  margin: 0 auto;
   margin-bottom: auto;
-  border: 2px solid red;
+  margin-left: 0;
+}
+@media only screen and (min-width: 750px) {
+  main .name .name-details {
+    margin-left: 0;
+  }
 }
 main .name .name-details .h1Tag {
   margin-left: 20px;
@@ -71,6 +79,11 @@ main .name .name-details .h1Tag {
 @media only screen and (min-width: 750px) {
   main .name .name-details .h1Tag {
     font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main .name .name-details .h1Tag {
+    font-size: 3rem;
   }
 }
 main .name .name-details .full-name {
@@ -94,6 +107,11 @@ main .name .name-details .full-name h3 {
     font-size: 70px;
   }
 }
+@media only screen and (min-width: 1600px) {
+  main .name .name-details .full-name h3 {
+    font-size: 7rem;
+  }
+}
 main .name .name-details .full-name h1 {
   font-size: 45px;
 }
@@ -105,6 +123,11 @@ main .name .name-details .full-name h1 {
 @media only screen and (min-width: 850px) {
   main .name .name-details .full-name h1 {
     font-size: 110px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main .name .name-details .full-name h1 {
+    font-size: 11rem;
   }
 }
 main .name .button-29 {
@@ -139,7 +162,21 @@ main .name .button-29 {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 18px;
+  font-size: 10px;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 750px) {
+  main .name .button-29 {
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    bottom: -5rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main .name .button-29 {
+    font-size: 25px;
+  }
 }
 main .name .button-29:focus {
   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
@@ -151,4 +188,7 @@ main .name .button-29:hover {
 main .name .button-29:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+main .i-am {
+  margin-top: 50px;
 }/*# sourceMappingURL=Home.css.map */

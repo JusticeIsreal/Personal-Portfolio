@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1335a6cc.css",
+    "main.js": "/static/js/main.bf2bd333.js",
+    "static/js/787.876ca557.chunk.js": "/static/js/787.876ca557.chunk.js",
+    "static/media/JUSTICE_ISREAL_AGBONMA_CV.pdf": "/static/media/JUSTICE_ISREAL_AGBONMA_CV.8392666df4fca1a1ab0c.pdf",
+    "static/media/PortfolioBg.jpg": "/static/media/PortfolioBg.20369345686263b863b8.jpg",
+    "index.html": "/index.html",
+    "main.1335a6cc.css.map": "/static/css/main.1335a6cc.css.map",
+    "main.bf2bd333.js.map": "/static/js/main.bf2bd333.js.map",
+    "787.876ca557.chunk.js.map": "/static/js/787.876ca557.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1335a6cc.css",
+    "static/js/main.bf2bd333.js"
+  ]
+}

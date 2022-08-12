@@ -196,9 +196,9 @@ section {
       }
     }
   }
-  @include responsive(desktop) {
-    .ban {
-      opacity: 0;
-    }
-  }
+  // @include responsive(desktop) {
+  //   .ban {
+  //     opacity: 0;
+  //   }
+  // }
 }

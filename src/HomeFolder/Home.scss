@@ -61,7 +61,7 @@ $special-Color: #4c5eff;
   }
 
   @if $breakpoint==desktop {
-    @media only screen and (min-width: 1750px) {
+    @media only screen and (min-width: 1600px) {
       @content;
     }
   }
@@ -85,31 +85,40 @@ main {
     }
   }
   .name {
-    border: 2px solid green;
-    margin-top: 10px;
+    // border: 2px solid green;
+    padding-right: 20px;
+    margin-top: 50px;
     gap: 10px;
+    width: 100%;
+    padding: 10px;
     @include flexDisplay(space-between, center, column);
-    // border: 2px solid red;
+
     @include responsive(tablet) {
-      @include flexDisplay(space-between, center, row);
-      margin-top: 20px;
-      margin-left: 30px;
+      @include flexDisplay(space-between, flex-start, column);
+      margin-top: 50px;
+      padding-right: 50px;
     }
 
     .name-details {
+      margin: 0 auto;
       margin-bottom: auto;
-      border: 2px solid red;
+      margin-left: 0;
+
+      @include responsive(bigphone) {
+        margin-left: 0;
+      }
       .h1Tag {
-        //   border: 2px solid red;
         margin-left: 20px;
         font-size: 10px;
         @include responsive(bigphone) {
           font-size: 30px;
         }
+        @include responsive(desktop) {
+          font-size: 3rem;
+        }
       }
 
       .full-name {
-        //   border: 2px solid red;
         margin-left: 30px;
 
         @include responsive(tablet) {
@@ -125,6 +134,9 @@ main {
           @include responsive(tablet) {
             font-size: 70px;
           }
+          @include responsive(desktop) {
+            font-size: 7rem;
+          }
         }
         h1 {
           font-size: 45px;
@@ -134,9 +146,13 @@ main {
           @include responsive(tablet) {
             font-size: 110px;
           }
+          @include responsive(desktop) {
+            font-size: 11rem;
+          }
         }
       }
     }
+   
 
     /* CSS */
     .button-29 {
@@ -173,8 +189,21 @@ main {
       touch-action: manipulation;
       white-space: nowrap;
       will-change: box-shadow, transform;
-      font-size: 18px;
+      font-size: 10px;
+      margin-top: 50px;
+      //   margin-left: auto;
 
+      @include responsive(bigphone) {
+        font-size: 18px;
+        // display: none;
+        position: absolute;
+        right: 30px;
+        bottom: -5rem;
+        // margin-right: 95%;
+      }
+      @include responsive(desktop) {
+        font-size: 25px;
+      }
       &:focus {
         box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
           rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
@@ -192,4 +221,8 @@ main {
       }
     }
   }
+   .i-am {
+    //   border: 2px solid red;
+      margin-top: 50px;
+    }
 }

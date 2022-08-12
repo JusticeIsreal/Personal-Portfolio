@@ -1,5 +1,6 @@
 import React from "react";
 import "../HomeFolder/Home.css";
+import cv from "../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 // import { useEffect, useState, useRef } from "react";
 
 function Home() {
@@ -21,11 +22,11 @@ function Home() {
             <p>{"<h1>"}</p>
           </div>
         </div>
-       
-          <button class="button-29" >
+        <a href={cv} download>
+          <button class="button-29">
             <h1>{"<Download Cv/>"}</h1>
           </button>
-        
+        </a>
       </div>
       <div className="i-am">
         <h3>{"<p> Software Developer </p>"}</h3>
