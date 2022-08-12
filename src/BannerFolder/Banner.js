@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Home from "../Home/Home";
 import "./BannerStyle.css";
+import "../App.css";
 import { useRef, useEffect } from "react";
+
 // import BannerBg from "../images/PortfolioBg.jpg"
 
 function Banner() {
@@ -17,8 +20,6 @@ function Banner() {
     let radian = Math.atan2(e.pageX - x, e.pageY - y);
     let rotation = radian * (180 / Math.PI) * -1 + 270;
     eyeRef1.current.style.transform = "rotate(" + rotation + "deg)";
-    // eyeRef1.current.style.width = "20px";
-    // console.log(eyeRef1);
 
     let a =
       eyeRef2.current.getBoundingClientRect().left +
@@ -38,6 +39,7 @@ function Banner() {
           <div className="eye1" ref={eyeRef1}></div>
           <div className="eye2" ref={eyeRef2}></div>
         </div>
+        <Home />
       </div>
     </section>
   );
