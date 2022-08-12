@@ -32,7 +32,9 @@ function Home() {
       <div className="i-am">
         <h3>{"<p> Software Developer </p>"}</h3>
       </div>
-      {/* <About /> */}
+
+      <div></div>
+      <About />
     </main>
   );
 }
