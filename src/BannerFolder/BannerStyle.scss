@@ -32,13 +32,6 @@ $text-Color: rgb(68, 68, 68);
 $special-text-Color: royalblue;
 $special-Color: #4c5eff;
 
-// body {
-//     height: 100%;
-//     width: 100%;
-//     min-height: 100vh;
-//     background-color: $cardsj-bg;
-// }
-
 @mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
   display: flex;
   justify-content: $justifyProp;
@@ -73,13 +66,95 @@ $special-Color: #4c5eff;
 }
 
 section {
+  background-color: black;
+  // border: 2px solid red;
+  // margin-top: 2rem;
   .banner {
-    @include flexDisplay(flex-start, center, row);
-    border: 2px solid red;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    // @include flexDisplay(flex-start, center, row);
     height: 100vh;
+    background: url(/src/images/PortfolioBg.jpg) fixed top;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    background-size: 150%;
+    background-color: black;
 
     @include responsive(tablet) {
-     
+      height: 100vh;
+      background: url(/src/images/PortfolioBg.jpg) fixed top;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .ban {
+      @include flexDisplay(space-around, center, row);
+      // border: 2px solid red;
+      width: 80%;
+      max-width: 900px;
+      // min-width: 500px;
+      height: 10%;
+      margin: 0 auto;
+      position: fixed;
+      margin-top: 15%;
+
+      .eye1 {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        background-color: rgb(170, 170, 170);
+        display: block;
+        margin: 0 auto;
+        box-shadow: insert 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+        // top: 400px;
+        // left: 30px;
+        // right:70vw ;
+        // position: fixed;
+        // margin: 0 70vw 0 30vw;
+
+        // position: absolute;
+        border-radius: 50%;
+      }
+      .eye1::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        top: 50%;
+        left: 35px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid blue;
+        box-sizing: border-box;
+      }
+      .eye2 {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        background-color: rgb(170, 170, 170);
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0 5px 45px gray, inset 0 0 15px gray, insert 0 0 25px gray;
+        // margin-top: 33%;
+        // position: absolute;
+        border-radius: 50%;
+      }
+      .eye2::before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        top: 50%;
+        left: 35px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid blue;
+        box-sizing: border-box;
+      }
     }
   }
 }

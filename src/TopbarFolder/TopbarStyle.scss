@@ -68,12 +68,17 @@ $special-Color: #4c5eff;
 
 // topbar section
 section {
-  // navbar container
   .topbar {
     @include flexDisplay(space-between, center, row);
-    position: relative;
+    position: absolute;
     padding: 0 5px;
     height: 4rem;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    // border: 2px solid green;
 
     @include responsive(tablet) {
       padding: 10px 10px;
@@ -81,6 +86,8 @@ section {
     //  icon
     h3 {
       color: #4c5eff;
+      
+      // position: fixed;
     }
     nav {
       position: absolute;
@@ -104,8 +111,7 @@ section {
         transition: all 0.5s linear;
         @include flexDisplay(space-between, center, column);
 
-
-        // 
+        // class state for toggle mode
         &.openMenu {
           height: 200px;
         }
@@ -113,6 +119,7 @@ section {
           height: 0px;
         }
 
+        // nav response for tablet and desktop screen
         @include responsive(tablet) {
           @include flexDisplay(space-between, center, row);
           overflow: visible;
@@ -120,6 +127,7 @@ section {
         }
 
         li {
+          color: antiquewhite;
           @include flexDisplay(center, center, row);
           padding: 10px;
           border-bottom: 1px solid blue;
@@ -151,6 +159,7 @@ section {
       top: 6rem;
       height: 140px;
       width: 80px;
+      position: fixed;
 
       //   desktop and tablet view
       @include responsive(tablet) {
@@ -199,6 +208,7 @@ section {
 
       .menu-btn {
         font-size: 50px;
+        color: antiquewhite;
 
         &:hover {
           color: royalblue;

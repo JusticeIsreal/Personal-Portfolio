@@ -26,9 +26,14 @@ section .topbar {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  position: relative;
+  position: absolute;
   padding: 0 5px;
   height: 4rem;
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
 }
 @media only screen and (min-width: 850px) {
   section .topbar {
@@ -79,6 +84,7 @@ section .topbar nav ul.closeMenu {
   }
 }
 section .topbar nav ul li {
+  color: antiquewhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +120,7 @@ section .topbar .social-media {
   top: 6rem;
   height: 140px;
   width: 80px;
+  position: fixed;
 }
 @media only screen and (min-width: 850px) {
   section .topbar .social-media {
@@ -163,6 +170,7 @@ section .topbar .topmenu-icon {
 }
 section .topbar .topmenu-icon .menu-btn {
   font-size: 50px;
+  color: antiquewhite;
 }
 section .topbar .topmenu-icon .menu-btn:hover {
   color: royalblue;
