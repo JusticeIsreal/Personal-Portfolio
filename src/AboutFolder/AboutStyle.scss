@@ -83,14 +83,12 @@ main {
   }
 
   .mappedDetails {
-    width: 90%;
-    // margin: 0 auto;
-    // margin-top: 80px;
+    width: 100%;
     position: relative;
     overflow-y: scroll;
     max-height: 300px;
     padding: 0 15px;
-    background-color: rgba(7, 93, 241, 0.248);
+    background-color: rgba(0, 94, 255, 0.15);
     box-shadow: 5px 5px 30px rgba(65, 105, 225, 0.274);
 
     p {
