@@ -174,63 +174,14 @@
   overflow: hidden;
 }
 .aboutMe .pun .slideCon {
-  -webkit-animation: aa 20s linear infinite;
-          animation: aa 20s linear infinite;
+  -webkit-animation: 20s linear infinite;
+          animation: 20s linear infinite;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-top: 8px;
-  align-self: center;
-  font-size: 20px;
-  width: 250%;
+  padding-top: 5px;
 }
 .aboutMe .pun .slideCon p {
-  font-size: 10px;
-}
-@-webkit-keyframes aa {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(-100%);
-  }
-  55% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  60% {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  70% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-@keyframes aa {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateX(-100%);
-  }
-  55% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  60% {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  70% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  font-size: 13px;
 }/*# sourceMappingURL=AboutStyle.css.map */

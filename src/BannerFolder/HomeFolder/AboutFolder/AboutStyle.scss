@@ -216,43 +216,13 @@ $special-Color: #4c5eff;
     overflow: hidden;
 
     .slideCon {
-      animation: aa 20s linear infinite;
+      animation: 20s linear infinite;
       @include flexDisplay(space-between, center, row);
-      margin-top: 8px;
-      align-self: center;
-      // border: 2px solid green;
-      font-size: 20px;
-      width: 250%;
+      // border: 2px solid red;
+      padding-top: 5px;
 
       p {
-        // @include flexDisplay(space-between, center, row);
-        // border: 2px solid red;
-        font-size: 10px;
-       
-      }
-
-      @keyframes aa {
-        0% {
-          transform: translateX(100%);
-        }
-        50% {
-          opacity: 0.5;
-          transform: translateX(-100%);
-        }
-        55% {
-          opacity: 0;
-          transform: translateX(-100%);
-        }
-        60% {
-          opacity: 0;
-          transform: translateX(50%);
-        }
-        70% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(100%);
-        }
+        font-size: 13px;
       }
     }
   }

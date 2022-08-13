@@ -80,14 +80,16 @@ function About() {
         Giving LIFE to your IDEAS and SOLUTIONS to real-life PROBLEMS{" "}
       </p>
       <div className="pun">
-        <div className="slideCon">
-          <p> {"❖ Web design ❖"} </p>
-          <p> {"❖ Web Application Development ❖"}</p>
-          <p> {"❖ Desktop Application Development ❖"}</p>
-          <p> {"❖ UI / UX ❖"}</p>
-          <p> {"❖ Product Design ❖"}</p>
-          <p> {"❖ Graphics Design ❖"}</p>
-        </div>
+        <marquee className="slideCon">
+          <p>
+            {"❖ Web design ❖"}
+            {" Web Application Development ❖"}
+            {" Desktop Application Development ❖"}
+            {" UI / UX ❖"}
+            {" Product Design ❖"}
+            {" Graphics Design ❖"}
+          </p>
+        </marquee>
       </div>
     </main>
   );
