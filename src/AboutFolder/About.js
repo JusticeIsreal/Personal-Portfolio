@@ -18,12 +18,19 @@ function About() {
   };
 
   return (
-    <main>
+    <main className="aboutMe">
       <div className="aboutMe-container">
         <h3>{"//002.    .     <p> ABOUT ME ? </p>"}</h3>
       </div>
       <div className="mappedHeading">
         <h3>MyPitch:</h3>
+        <p
+          onClick={() => {
+            readMore();
+          }}
+        >
+          {state.readAboutMe ? "Read more" : "Read less"}
+        </p>
       </div>
       {Pitch.map((item) => (
         <div key={item.id} className="mappedDetails">
@@ -40,13 +47,6 @@ function About() {
             ) : (
               ""
             )}
-          </p>
-          <p
-            onClick={() => {
-              readMore();
-            }}
-          >
-            {state.readAboutMe ? "Read more" : "Read less"}
           </p>
         </div>
       ))}

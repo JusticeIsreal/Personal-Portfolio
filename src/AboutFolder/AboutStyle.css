@@ -16,36 +16,49 @@
   background-color: royalblue;
 }
 
-main .aboutMe-container {
-  font-size: 10px;
+.aboutMe {
+  border: 2px solid royalblue;
+  background-color: rgba(97, 155, 255, 0.062);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
   margin-top: 50px;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+.aboutMe .aboutMe-container {
+  font-size: 10px;
 }
 @media only screen and (min-width: 800px) {
-  main .aboutMe-container {
+  .aboutMe .aboutMe-container {
     font-size: 20px;
   }
 }
-main .mappedHeading {
+.aboutMe .mappedHeading {
   width: 90%;
   padding: 15px;
   margin-top: 30px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
-main .mappedHeading h3 {
+.aboutMe .mappedHeading h3 {
   font-size: 15px;
 }
-main .mappedDetails {
-  width: 100%;
-  position: relative;
-  overflow-y: scroll;
-  max-height: 300px;
-  padding: 0 15px;
-  background-color: rgba(0, 94, 255, 0.15);
-  box-shadow: 5px 5px 30px rgba(65, 105, 225, 0.274);
-}
-main .mappedDetails p {
+.aboutMe .mappedHeading p {
   color: rgb(109, 135, 192);
   font-size: 10px;
   letter-spacing: 1px;
   line-height: 17px;
+}
+.aboutMe .mappedDetails {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  max-height: 300px;
+  padding: 5px 15px;
+}
+.aboutMe .mappedDetails p {
+  color: rgb(109, 135, 192);
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.aboutMe .mappedDetails p::first-letter {
+  font-size: 20px;
 }/*# sourceMappingURL=AboutStyle.css.map */
