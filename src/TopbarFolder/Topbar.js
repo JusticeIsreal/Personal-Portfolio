@@ -1,7 +1,12 @@
 import React from "react";
 import { useReducer } from "react";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
-import { FaFacebookSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaLinkedin,
+  FaMailBulk,
+} from "react-icons/fa";
 import "./TopbarStyle.css";
 import reducer from "../Reducer/Reducer";
 
@@ -40,13 +45,13 @@ function Topbar() {
         </nav>
         <div className="social-media">
           <li>
-            <FaFacebookSquare className="social-icon" />
-            <FaFacebookSquare className="social-icon" />
-            <FaFacebookSquare className="social-icon" />
-            <FaFacebookSquare className="social-icon" />
+            <FaGithubSquare className="social-icon git" />
+            <FaLinkedin className="social-icon linkedin" />
+            <FaMailBulk className="social-icon mail" />
+            <FaFacebookSquare className="social-icon fb" />
           </li>
           <div className="social-media-follow-me">
-            <p> FOLLOW ME</p>
+            <p>CONNECT</p>
           </div>
         </div>
         <div className="topmenu-icon" onClick={() => toggleMenu()}>
