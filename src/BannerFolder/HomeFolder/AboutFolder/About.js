@@ -1,6 +1,5 @@
 import "./AboutStyle.css";
 import { useReducer } from "react";
-import { BiUpArrow } from "react-icons/bi";
 import reducer from "../../../Reducer/Reducer";
 import Pitch from "./Pitch";
 
@@ -31,31 +30,17 @@ function About() {
             readMore();
           }}
         >
-          {state.readAboutMe ? (
-            <p>
-              {"Read less"}
-              <BiUpArrow />
-            </p>
-          ) : (
-            "Read more"
-          )}
+          {state.readAboutMe ? <>{"Read less"}</> : "Read more"}
         </p>
       </div>
 
       {Pitch.map((item) => (
         <div key={item.id} className="mappedDetails">
-          <p>
+          <span>
             {state.readAboutMe ? (
-              <p>
-                {item.myPitch}
-                {item.motto.map((m) => (
-                  <div key={m.id}>
-                    <p>{m.strength}</p>
-                  </div>
-                ))}
-              </p>
+              <span>{item.myPitch}</span>
             ) : (
-              <>
+              <span>
                 "{item.myPitch.substring(0, 120)} ..."
                 <p
                   className="readMore"
@@ -63,18 +48,11 @@ function About() {
                     readMore();
                   }}
                 >
-                  {state.readAboutMe ? (
-                    <p>
-                      {"Read less"}
-                      <BiUpArrow />
-                    </p>
-                  ) : (
-                    "Read more"
-                  )}
+                  {state.readAboutMe ? "Read less" : "Read more" }
                 </p>
-              </>
+              </span>
             )}
-          </p>
+          </span>
         </div>
       ))}
 

@@ -60,6 +60,7 @@
 .aboutMe .mappedHeading p {
   color: rgb(109, 135, 192);
   font-size: 10px;
+  width: 100px;
   letter-spacing: 1px;
   line-height: 17px;
 }
@@ -84,21 +85,21 @@
     width: 80%;
   }
 }
-.aboutMe .mappedDetails p {
+.aboutMe .mappedDetails span {
   color: rgb(109, 135, 192);
   font-size: 10px;
   letter-spacing: 1px;
   line-height: 17px;
 }
 @media only screen and (min-width: 750px) {
-  .aboutMe .mappedDetails p {
+  .aboutMe .mappedDetails span {
     color: rgb(150, 171, 217);
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 20px;
   }
 }
-.aboutMe .mappedDetails p .readMore {
+.aboutMe .mappedDetails span .readMore {
   border: 2px solid rgba(206, 220, 254, 0.384);
   width: 80px;
   padding: 0 5px;
@@ -106,7 +107,7 @@
   cursor: pointer;
 }
 @media only screen and (min-width: 750px) {
-  .aboutMe .mappedDetails p .readMore {
+  .aboutMe .mappedDetails span .readMore {
     font-size: 12px;
     width: 105px;
     padding: 0 5px;
@@ -144,6 +145,7 @@
 }
 .aboutMe .myStaticsCon .statCard p {
   font-size: 8px;
+  color: rgb(150, 171, 217);
 }
 @media only screen and (min-width: 750px) {
   .aboutMe .myStaticsCon .statCard p {
@@ -155,6 +157,7 @@
   text-align: center;
   font-size: 8px;
   margin-top: 10px;
+  color: rgb(150, 171, 217);
 }
 @media only screen and (min-width: 750px) {
   .aboutMe .punchLine {

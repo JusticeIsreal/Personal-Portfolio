@@ -98,8 +98,6 @@ $special-Color: #4c5eff;
       left: 0;
       right: 0;
       top: 5rem;
-      // background-color: rgba(160, 183, 252, 0.888);
-      // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
       box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
       background-color: rgba(13, 21, 34, 0.694);
 
@@ -187,10 +185,7 @@ $special-Color: #4c5eff;
 
       li {
         @include flexDisplay(center, center, column);
-        // border: 1px solid rgba(245, 245, 245, 0.215);
-        // background-color: rgba(255, 255, 255, 0.1);
         background-color: rgba(13, 21, 34, 0.694);
-        // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
         box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.193);
         border-radius: 8px;
         margin-bottom: auto;
