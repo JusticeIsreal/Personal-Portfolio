@@ -106,6 +106,7 @@ section {
           rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
           rgba(0, 0, 0, 0.09) 0px 32px 16px;
         border-radius: 50%;
+        
       }
       .eye1::before {
         content: "";
@@ -119,6 +120,7 @@ section {
         transform: translate(-50%, -50%);
         border: 5px solid royalblue;
         box-sizing: border-box;
+        
       }
       .eye2 {
         position: relative;
@@ -149,6 +151,7 @@ section {
         transform: translate(-50%, -50%);
         border: 5px solid royalblue;
         box-sizing: border-box;
+        
       }
     }
 

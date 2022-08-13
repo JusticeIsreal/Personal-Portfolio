@@ -20,7 +20,7 @@
   border: 1px solid royalblue;
   margin: 0 auto;
   background-color: rgba(13, 21, 34, 0.694);
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   margin-top: 100px;
   border-radius: 10px;
   padding: 20px 5px;
@@ -127,7 +127,7 @@
   align-items: top;
   flex-direction: column;
   border: 1px solid royalblue;
-  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.363);
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   border-radius: 5px;
   width: 30%;
   margin-bottom: auto;
