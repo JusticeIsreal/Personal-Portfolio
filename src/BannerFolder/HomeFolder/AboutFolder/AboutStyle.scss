@@ -110,15 +110,6 @@ $special-Color: #4c5eff;
       line-height: 17px;
       word-spacing: 5px;
     }
-    .readMore {
-      // color: rgb(206, 234, 254);
-      font-size: 8px;
-      cursor: pointer;
-
-      @include responsive(bigphone) {
-        font-size: 12px;
-      }
-    }
   }
 
   .mappedDetails {
@@ -148,17 +139,19 @@ $special-Color: #4c5eff;
       }
 
       .readMore {
-        // color: rgb(206, 234, 254);
-        border: 2px solid rgba(206, 220, 254, 0.384);
+        color: rgb(206, 234, 254);
+        border: none;
         width: 80px;
+        height: 20px;
+        background-color: rgba(146, 17, 17, 0);
         padding: 0 5px;
         font-size: 8px;
         cursor: pointer;
 
         @include responsive(bigphone) {
-          font-size: 12px;
-          width: 105px;
-          padding: 0 5px;
+          font-size: 15px;
+          width: 110px;
+          padding: 5px;
         }
       }
     }
@@ -181,15 +174,16 @@ $special-Color: #4c5eff;
       padding: 5px 0;
 
       @include responsive(bigphone) {
-        height: 150px;
+        height: 170px;
         border-radius: 10px;
+        padding: 0 0 15px 0;
       }
 
       h1 {
-        font-size: 100%;
+        font-size: 50px;
 
         @include responsive(bigphone) {
-          font-size: 60px;
+          font-size: 100px;
         }
       }
       p {
@@ -219,7 +213,6 @@ $special-Color: #4c5eff;
     border-bottom: 1px solid royalblue;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
     height: 30px;
-    // width: 98%;
     margin: 0 auto;
     margin-top: 30px;
     overflow: hidden;

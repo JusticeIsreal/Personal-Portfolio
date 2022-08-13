@@ -1,5 +1,7 @@
 import "./AboutStyle.css";
 import { useReducer } from "react";
+import { SiIbm, SiScrumalliance, FaCode } from "react-icons/si";
+import { HiCode } from "react-icons/hi";
 import reducer from "../../../Reducer/Reducer";
 import Pitch from "./Pitch";
 
@@ -24,14 +26,6 @@ function About() {
       </div>
       <div className="mappedHeading">
         <h3>MyPitch:</h3>
-        <p
-          className="readMore"
-          onClick={() => {
-            readMore();
-          }}
-        >
-          {state.readAboutMe ? <>{"Read less"}</> : "Read more"}
-        </p>
       </div>
 
       {Pitch.map((item) => (
@@ -40,18 +34,11 @@ function About() {
             {state.readAboutMe ? (
               <span>{item.myPitch}</span>
             ) : (
-              <span>
-                "{item.myPitch.substring(0, 120)} ..."
-                <p
-                  className="readMore"
-                  onClick={() => {
-                    readMore();
-                  }}
-                >
-                  {state.readAboutMe ? "Read less" : "Read more"}
-                </p>
-              </span>
+              <span>"{item.myPitch.substring(0, 120)} ..."</span>
             )}
+            <button className="readMore" onClick={readMore}>
+              {state.readAboutMe ? "Read less" : "Read more"}
+            </button>
           </span>
         </div>
       ))}
@@ -59,26 +46,24 @@ function About() {
       <section className="myStaticsCon">
         <div className="statCard">
           <h1>
-            300<sup>+</sup>
+            <HiCode />
           </h1>
-          <p>Susccessful Projects</p>
+          <p>Software Developer</p>
         </div>
         <div className="statCard">
           <h1>
-            200<sup>+</sup>
+            <SiIbm />
           </h1>
-          <p>Super Happy Clients</p>
+          <p>Project Manager</p>
         </div>
         <div className="statCard">
           <h1>
-            2<sup>+</sup>
+            <SiScrumalliance />
           </h1>
-          <p>Years Experience</p>
+          <p>Scrum Master</p>
         </div>
       </section>
-      <p className="punchLine">
-        Giving LIFE to your IDEAS and SOLUTIONS to real-life PROBLEMS{" "}
-      </p>
+
       <div className="pun">
         <marquee className="slideCon">
           <p>
