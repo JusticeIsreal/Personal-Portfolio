@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+// global variables
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+  // font-family: poppins;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
+
+// GLOBAL STYLES
+$shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.301);
+$border: 2px solid rgb(214, 214, 214);
+$cardsj-bg: rgb(224, 223, 230);
+$hover-Color: whitesmoke;
+$hover-Text-Color: #444444;
+$text-Color: rgb(68, 68, 68);
+$special-text-Color: royalblue;
+$special-Color: #4c5eff;
+
+@mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
+  display: flex;
+  justify-content: $justifyProp;
+  align-items: $alignProp;
+  flex-direction: $flexDirection;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==smallPhone {
+    @media only screen and (max-width: 300px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 850px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bigphone {
+    @media only screen and (min-width: 750px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+}
+
+.aboutMe {
+  border: 1px solid royalblue;
+  margin: 0 auto;
+  // background-color: rgba(97, 155, 255, 0.062);
+  // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  background-color: rgba(13, 21, 34, 0.694);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 20px 5px;
+  width: 100%;
+  max-width: 1700px;
+
+  .aboutMe-container {
+    font-size: 10px;
+
+    @include responsive(bigphone) {
+      font-size: 20px;
+    }
+  }
+  .mappedHeading {
+    width: 90%;
+    padding: 15px;
+    margin-top: 30px;
+
+    @include responsive(bigphone) {
+      font-size: 20px;
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 80%;
+    }
+
+    h3 {
+      font-size: 15px;
+      text-decoration: underline;
+
+      @include responsive(bigphone) {
+        font-size: 20px;
+      }
+    }
+    p {
+      color: rgb(109, 135, 192);
+      font-size: 10px;
+      letter-spacing: 1px;
+      line-height: 17px;
+    }
+    .readMore {
+      // color: rgb(206, 234, 254);
+      font-size: 8px;
+      cursor: pointer;
+
+      @include responsive(bigphone) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .mappedDetails {
+    margin: 0 auto;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 300px;
+    padding: 5px 15px;
+
+    @include responsive(bigphone) {
+      width: 80%;
+    }
+
+    p {
+      color: rgb(109, 135, 192);
+      font-size: 10px;
+      letter-spacing: 1px;
+      line-height: 17px;
+
+      @include responsive(bigphone) {
+        color: rgb(150, 171, 217);
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 20px;
+      }
+
+      .readMore {
+        // color: rgb(206, 234, 254);
+        border: 2px solid rgba(206, 220, 254, 0.384);
+        width: 80px;
+        padding: 0 5px;
+        font-size: 8px;
+        cursor: pointer;
+
+        @include responsive(bigphone) {
+          font-size: 12px;
+          width: 105px;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+
+  .myStaticsCon {
+    @include flexDisplay(space-around, top, row);
+    background-color: rgba(13, 21, 34, 0.694);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+
+    .statCard {
+      @include flexDisplay(center, top, column);
+      border: 1px solid royalblue;
+      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.363);
+      border-radius: 5px;
+      width: 30%;
+      margin-bottom: auto;
+      text-align: center;
+      padding: 5px 0;
+
+      h1 {
+        font-size: 100%;
+
+        @include responsive(bigphone) {
+          font-size: 60px;
+        }
+      }
+      p {
+        font-size: 8px;
+
+        @include responsive(bigphone) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .punchLine {
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    margin-top: 10px;
+
+    @include responsive(bigphone) {
+      font-size: 20px;
+    }
+  }
+}

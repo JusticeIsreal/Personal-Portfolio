@@ -241,12 +241,7 @@ $special-Color: #4c5eff;
 
       .menu-btn {
         font-size: 50px;
-        color: antiquewhite;
-
-        &:hover {
-          color: royalblue;
-          transform: scale(1.2);
-        }
+        color: rgb(150, 171, 217);
       }
       @include responsive(tablet) {
         display: none;

@@ -1,7 +1,7 @@
 import React from "react";
-import About from "../AboutFolder/About.js";
-import "../HomeFolder/Home.css";
-import cv from "../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
+import About from "./AboutFolder/About.js";
+import "./Home.css";
+import cv from "../../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 // import { useEffect, useState, useRef } from "react";
 
 function Home() {
