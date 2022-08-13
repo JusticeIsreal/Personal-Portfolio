@@ -36,15 +36,16 @@ main .mappedHeading h3 {
 }
 main .mappedDetails {
   width: 90%;
-  margin: 0 auto;
   position: relative;
   overflow-y: scroll;
   max-height: 300px;
   padding: 0 15px;
-  background-color: rgba(0, 0, 0, 0.81);
+  background-color: rgba(7, 93, 241, 0.248);
   box-shadow: 5px 5px 30px rgba(65, 105, 225, 0.274);
 }
 main .mappedDetails p {
-  font-size: 9px;
+  color: rgb(109, 135, 192);
+  font-size: 10px;
+  letter-spacing: 1px;
   line-height: 17px;
 }/*# sourceMappingURL=AboutStyle.css.map */
