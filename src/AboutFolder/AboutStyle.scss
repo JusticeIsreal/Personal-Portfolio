@@ -10,13 +10,8 @@
   // font-family: poppins;
 }
 
-*::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 1rem;
-}
-
 *::-webkit-scrollbar-track {
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -62,6 +57,45 @@ $special-Color: #4c5eff;
   @if $breakpoint==desktop {
     @media only screen and (min-width: 1280px) {
       @content;
+    }
+  }
+}
+
+main {
+  .aboutMe-container {
+    font-size: 10px;
+    margin-top: 50px;
+
+    @include responsive(bigphone) {
+      font-size: 20px;
+    }
+  }
+  .mappedHeading {
+    width: 90%;
+    padding: 15px;
+    margin-top: 30px;
+    // background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .mappedDetails {
+    width: 90%;
+    margin: 0 auto;
+    // margin-top: 80px;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 300px;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 30px rgba(65, 105, 225, 0.274);
+
+    p {
+      font-size: 9px;
+      line-height: 17px;
     }
   }
 }

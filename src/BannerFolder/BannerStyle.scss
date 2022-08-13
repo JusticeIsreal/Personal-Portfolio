@@ -12,10 +12,7 @@
   // font-family: poppins;
 }
 
-*::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 1rem;
-}
+
 
 *::-webkit-scrollbar-track {
   background-color: whitesmoke;
@@ -75,10 +72,10 @@ section {
     position: relative;
     display: flex;
     justify-content: space-around;
-    height: 100vh;
+    height: 90vh;
     background: url(/src/images/PortfolioBg.jpg) fixed top;
     background-repeat: no-repeat;
-    overflow: scroll;
+    overflow-y: scroll;
     background-size: 150%;
     background-color: black;
 
@@ -156,7 +153,7 @@ section {
     }
 
     @include responsive(tablet) {
-      height: 100vh;
+      height: 90vh;
       background: url(/src/images/PortfolioBg.jpg) fixed top;
       background-repeat: no-repeat;
       background-size: contain;

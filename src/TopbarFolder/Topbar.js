@@ -1,5 +1,5 @@
 import React from "react";
-import {  useReducer } from "react";
+import { useReducer } from "react";
 import { ImMenu3, ImMenu4 } from "react-icons/im";
 import { FaFacebookSquare } from "react-icons/fa";
 import "./TopbarStyle.css";
@@ -7,7 +7,7 @@ import reducer from "../Reducer/Reducer";
 
 const initialState = {
   menuShow: false,
-  
+  readAboutMe: false,
 };
 
 // COMPONENT STATR
@@ -16,7 +16,6 @@ function Topbar() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   // useRef declaration
- 
 
   // Menu btn click function
   const toggleMenu = () => {

@@ -20,21 +20,21 @@ function Home() {
             <h1>AGBONMA</h1>
           </div>
           <div className="h1Tag">
-            <p>{"<h1>"}</p>
+            <p>{"</h1>"}</p>
           </div>
         </div>
         <a href={cv} download>
-          <button class="button-29">
+          <button className="button-29">
             <h1>{"<Download Cv/>"}</h1>
           </button>
         </a>
       </div>
       <div className="i-am">
-        <h3>{"<p> Software Developer </p>"}</h3>
+        <h3 className="last">{"<p> Software Developer </p>"}</h3>
       </div>
 
-      <div></div>
       <About />
+      <div></div>
     </main>
   );
 }

@@ -8,11 +8,6 @@
   font-family: "Orbitron", sans-serif;
 }
 
-*::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 1rem;
-}
-
 *::-webkit-scrollbar-track {
   background-color: whitesmoke;
 }
@@ -30,10 +25,10 @@ section .banner {
   position: relative;
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 90vh;
   background: url(/src/images/PortfolioBg.jpg) fixed top;
   background-repeat: no-repeat;
-  overflow: scroll;
+  overflow-y: scroll;
   background-size: 150%;
   background-color: black;
 }
@@ -103,7 +98,7 @@ section .banner .ban .eye2::before {
 }
 @media only screen and (min-width: 850px) {
   section .banner {
-    height: 100vh;
+    height: 90vh;
     background: url(/src/images/PortfolioBg.jpg) fixed top;
     background-repeat: no-repeat;
     background-size: contain;

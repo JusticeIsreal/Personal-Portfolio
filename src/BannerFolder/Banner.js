@@ -39,6 +39,17 @@ function Banner() {
           <div className="eye2" ref={eyeRef2}></div>
         </div>
         <Home />
+        {/* <div>
+          duate of Maritime Academy of Nigeria with a First Class in Marine
+          Engineering.I am currently a full-stack web developer looking forward
+          to new opportunities. I've found in software development creative ways
+          to fulfill my desire for solutions to different kinds of problems. I
+          create technological solutions using computer programming using
+          technologies such as HTML, CSS, Bootstrap , JavaScript, React Js &
+          Redux, Node and Express js , MongoDB , MySQL , PostgreSQL and React
+          Native for Cross platform mobile Applications. I have spent the last 2
+          years working in the m
+        </div> */}
       </div>
     </section>
   );

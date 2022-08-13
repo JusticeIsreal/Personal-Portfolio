@@ -8,15 +8,43 @@
   font-family: "Orbitron", sans-serif;
 }
 
-*::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 1rem;
-}
-
 *::-webkit-scrollbar-track {
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: royalblue;
+}
+
+main .aboutMe-container {
+  font-size: 10px;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 800px) {
+  main .aboutMe-container {
+    font-size: 20px;
+  }
+}
+main .mappedHeading {
+  width: 90%;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+main .mappedHeading h3 {
+  font-size: 15px;
+}
+main .mappedDetails {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: scroll;
+  max-height: 300px;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.81);
+  box-shadow: 5px 5px 30px rgba(65, 105, 225, 0.274);
+}
+main .mappedDetails p {
+  font-size: 9px;
+  line-height: 17px;
 }/*# sourceMappingURL=AboutStyle.css.map */
