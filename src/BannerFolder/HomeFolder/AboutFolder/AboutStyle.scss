@@ -108,6 +108,7 @@ $special-Color: #4c5eff;
       width: 100px;
       letter-spacing: 1px;
       line-height: 17px;
+      word-spacing: 5px;
     }
     .readMore {
       // color: rgb(206, 234, 254);
@@ -136,12 +137,14 @@ $special-Color: #4c5eff;
       font-size: 10px;
       letter-spacing: 1px;
       line-height: 17px;
+      word-spacing: 3px;
 
       @include responsive(bigphone) {
         color: rgb(150, 171, 217);
         font-size: 15px;
         letter-spacing: 2px;
         line-height: 20px;
+        word-spacing: 5px;
       }
 
       .readMore {
@@ -177,6 +180,11 @@ $special-Color: #4c5eff;
       text-align: center;
       padding: 5px 0;
 
+      @include responsive(bigphone) {
+        height: 150px;
+        border-radius: 10px;
+      }
+
       h1 {
         font-size: 100%;
 
@@ -201,7 +209,8 @@ $special-Color: #4c5eff;
     color: rgb(150, 171, 217);
 
     @include responsive(bigphone) {
-      font-size: 20px;
+      font-size: 15px;
+      word-spacing: 10px;
     }
   }
 
@@ -218,11 +227,13 @@ $special-Color: #4c5eff;
     .slideCon {
       animation: 20s linear infinite;
       @include flexDisplay(space-between, center, row);
-      // border: 2px solid red;
       padding-top: 5px;
 
       p {
         font-size: 13px;
+        color: rgb(150, 171, 217);
+        word-spacing: 5px;
+        letter-spacing: 3px;
       }
     }
   }
