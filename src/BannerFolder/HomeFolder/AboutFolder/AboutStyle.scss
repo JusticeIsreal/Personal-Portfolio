@@ -204,4 +204,56 @@ $special-Color: #4c5eff;
       font-size: 20px;
     }
   }
+
+  .pun {
+    border-top: 1px solid royalblue;
+    border-bottom: 1px solid royalblue;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    height: 30px;
+    // width: 98%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+
+    .slideCon {
+      animation: aa 20s linear infinite;
+      @include flexDisplay(space-between, center, row);
+      margin-top: 8px;
+      align-self: center;
+      // border: 2px solid green;
+      font-size: 20px;
+      width: 250%;
+
+      p {
+        // @include flexDisplay(space-between, center, row);
+        // border: 2px solid red;
+        font-size: 10px;
+       
+      }
+
+      @keyframes aa {
+        0% {
+          transform: translateX(100%);
+        }
+        50% {
+          opacity: 0.5;
+          transform: translateX(-100%);
+        }
+        55% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        60% {
+          opacity: 0;
+          transform: translateX(50%);
+        }
+        70% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
 }

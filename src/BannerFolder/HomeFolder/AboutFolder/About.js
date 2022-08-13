@@ -48,7 +48,7 @@ function About() {
                     readMore();
                   }}
                 >
-                  {state.readAboutMe ? "Read less" : "Read more" }
+                  {state.readAboutMe ? "Read less" : "Read more"}
                 </p>
               </span>
             )}
@@ -79,6 +79,16 @@ function About() {
       <p className="punchLine">
         Giving LIFE to your IDEAS and SOLUTIONS to real-life PROBLEMS{" "}
       </p>
+      <div className="pun">
+        <div className="slideCon">
+          <p> {"❖ Web design ❖"} </p>
+          <p> {"❖ Web Application Development ❖"}</p>
+          <p> {"❖ Desktop Application Development ❖"}</p>
+          <p> {"❖ UI / UX ❖"}</p>
+          <p> {"❖ Product Design ❖"}</p>
+          <p> {"❖ Graphics Design ❖"}</p>
+        </div>
+      </div>
     </main>
   );
 }
