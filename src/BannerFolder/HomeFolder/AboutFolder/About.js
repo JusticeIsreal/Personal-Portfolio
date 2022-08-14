@@ -27,7 +27,6 @@ function About() {
       <div className="mappedHeading">
         <h3>MyPitch :</h3>
       </div>
-
       {Pitch.map((item) => (
         <div key={item.id} className="mappedDetails">
           <span>
@@ -42,7 +41,6 @@ function About() {
           </span>
         </div>
       ))}
-
       <section className="myStaticsCon">
         <div className="statCard">
           <h1>
@@ -63,7 +61,6 @@ function About() {
           <p>Scrum Master</p>
         </div>
       </section>
-
       <div className="pun">
         <marquee className="slideCon">
           <p>
