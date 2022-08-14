@@ -108,6 +108,7 @@ $special-Color: #4c5eff;
       &:hover {
         transform: scale(1.2);
         border: 2px solid royalblue;
+        background-color: rgba(26, 41, 66, 0.838);
       }
 
       @include responsive(bigphone) {
@@ -152,13 +153,11 @@ $special-Color: #4c5eff;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
     transition: all 0.3s linear;
+
     @include responsive(bigphone) {
       margin-top: 50px;
-      width: 500px;
-      height: 500px;
-    }
-    &:hover {
-      transform: scale(1.1);
+      width: 400px;
+      height: 400px;
     }
 
     .mern-stack {
@@ -180,7 +179,32 @@ $special-Color: #4c5eff;
         top: 30%;
 
         h1 {
-          font-size: 100px;
+          font-size: 70px;
+        }
+      }
+
+      .punt {
+        border-top: 1px solid royalblue;
+        border-bottom: 1px solid royalblue;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+        height: 30px;
+        margin: 0 auto;
+        width: 80%;
+        // margin-top: 30px;
+        overflow: hidden;
+        position: absolute;
+
+        .slideCont {
+          animation: 20s linear infinite;
+          @include flexDisplay(space-between, center, row);
+          padding-top: 5px;
+
+          p {
+            font-size: 13px;
+            color: rgb(150, 171, 217);
+            word-spacing: 5px;
+            letter-spacing: 3px;
+          }
         }
       }
     }
@@ -191,7 +215,7 @@ $special-Color: #4c5eff;
       // box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
 
       @include responsive(bigphone) {
-        font-size: 45px;
+        font-size: 30px;
       }
     }
     .react {
@@ -199,21 +223,21 @@ $special-Color: #4c5eff;
       bottom: 0;
       font-size: 40px;
       @include responsive(bigphone) {
-        font-size: 100px;
+        font-size: 50px;
       }
     }
     .express {
       right: 0;
       font-size: 40px;
       @include responsive(bigphone) {
-        font-size: 100px;
+        font-size: 50px;
       }
     }
     .node {
       bottom: 0;
       font-size: 40px;
       @include responsive(bigphone) {
-        font-size: 100px;
+        font-size: 50px;
       }
     }
     .js {
@@ -232,7 +256,7 @@ $special-Color: #4c5eff;
       // left: 50%;
       font-size: 40px;
       @include responsive(bigphone) {
-        font-size: 100px;
+        font-size: 50px;
       }
     }
     .ts {
@@ -264,29 +288,6 @@ $special-Color: #4c5eff;
     }
     .html {
       left: 50%;
-    }
-  }
-
-  .pun {
-    border-top: 1px solid royalblue;
-    border-bottom: 1px solid royalblue;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 30px;
-    overflow: hidden;
-
-    .slideCon {
-      animation: 20s linear infinite;
-      @include flexDisplay(space-between, center, row);
-      padding-top: 5px;
-
-      p {
-        font-size: 13px;
-        color: rgb(150, 171, 217);
-        word-spacing: 5px;
-        letter-spacing: 3px;
-      }
     }
   }
 }

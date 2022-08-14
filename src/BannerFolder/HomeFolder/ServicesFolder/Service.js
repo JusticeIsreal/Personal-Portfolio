@@ -84,16 +84,51 @@ function Service() {
         <div className="mern-stack">
           <h1>MERN</h1>
           <h1>STACK</h1>
+
+          <div className="punt">
+            <marquee className="slideCont">
+              <p>
+                {"❖ HTML ❖"}
+
+                {" CSS ❖"}
+
+                {" Sass ❖"}
+
+                {" Bootstrap ❖"}
+
+                {" JavaScript ❖"}
+
+                {" TypeScript ❖"}
+
+                {" Jquery ❖"}
+
+                {" GitHub ❖"}
+
+                {" React.Js ❖"}
+
+                {" Redux ❖"}
+
+                {" Next ❖"}
+
+                {" Node.Js ❖"}
+
+                {" Express ❖"}
+
+                {" MongoDB ❖"}
+
+                {" MySQL ❖"}
+
+                {" PostgreSQL ❖"}
+              </p>
+            </marquee>
+          </div>
         </div>
         <SiHtml5 className="icon html" />
         <SiCss3 className="icon css" />
         <SiBootstrap className="icon bs" />
         <FaSass className="icon scss" />
         <DiJavascript className="icon js" />
-        <SiTypescript
-          className="icon
-        ts"
-        />
+        <SiTypescript className="icon ts" />
         <SiJquery className="icon jq" />
         <FaGithubSquare className="icon gh" />
         <FaReact className="icon react" />
@@ -104,23 +139,6 @@ function Service() {
         <SiMongodb className="icon mongodb" />
         <SiMysql className="icon sql" />
         <SiPostgresql className="icon post" />
-      </div>
-      {/* <img src={img1} alt=""  className="img2"/> */}
-      <div className="pun">
-        <marquee className="slideCon">
-          <p>
-            {"❖ Full Stack Developer "}
-            {
-              "❖ IBM Engineering Systems Design Rhapsody for Model Based Systems Engineering (IBM) ❖"
-            }
-            {" Scrum Fundamentals Certified (SFC) ❖"}
-            {" Desktop Application Development ❖"}
-            {
-              " Master Project Manager - International Project Management Board Certification (MPM) ❖"
-            }
-            {" Project management fundamentals (IBM) ❖"}
-          </p>
-        </marquee>
       </div>
     </main>
   );
