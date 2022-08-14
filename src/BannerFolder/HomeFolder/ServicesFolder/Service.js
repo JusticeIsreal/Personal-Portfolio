@@ -38,67 +38,73 @@ function Service() {
         <h3>What I do :</h3>
       </div>
 
-      <section className="grid-stack-con">
-        {" "}
-        <div className="myServicesCon ">
-          <div className="serviceCard">
-            <h1>
-              <GiEarthAmerica />
-            </h1>
-            <p>Web Application Development</p>
-          </div>
-          <div className="serviceCard">
-            <h1>
-              <MdSendToMobile />
-            </h1>
-            <p>Mobile Application Development</p>
-          </div>
-          <div className="serviceCard">
-            <h1>
-              <FaDesktop />
-            </h1>
-            <p>Desktop Application Development</p>
-          </div>
-          <div className="serviceCard">
-            <h1>
-              {" "}
-              <ImDatabase />{" "}
-            </h1>
-            <p>Database Management</p>
-          </div>
-          <div className="serviceCard">
-            <h1>
-              <AiOutlineLineChart />
-            </h1>
-            <p>Project Management</p>
-          </div>
-          <div className="serviceCard">
-            <h1>
-              <CgFigma />
-            </h1>
-            <p>UI / UX</p>
-          </div>
+      <div className="myServicesCon ">
+        <div className="serviceCard">
+          <h1>
+            <GiEarthAmerica />
+          </h1>
+          <p>Web Application Development</p>
         </div>
-        <div className="stack">
-          <SiHtml5 className="icon" />
-          <SiCss3 />
-          <SiBootstrap />
-          <FaSass />
-          <DiJavascript />
-          <SiTypescript />
-          <SiJquery />
-          <FaGithubSquare />
-          <FaReact />
-          <SiRedux />
-          <TbBrandNextjs />
-          <FaNodeJs />
-          <SiExpress />
-          <SiMongodb />
-          <SiMysql />
-          <SiPostgresql />
+        <div className="serviceCard">
+          <h1>
+            <MdSendToMobile />
+          </h1>
+          <p>Mobile Application Development</p>
         </div>
-      </section>
-
+        <div className="serviceCard">
+          <h1>
+            <FaDesktop />
+          </h1>
+          <p>Desktop Application Development</p>
+        </div>
+        <div className="serviceCard">
+          <h1>
+            {" "}
+            <ImDatabase />{" "}
+          </h1>
+          <p>Database Management</p>
+        </div>
+        <div className="serviceCard">
+          <h1>
+            <AiOutlineLineChart />
+          </h1>
+          <p>Project Management</p>
+        </div>
+        <div className="serviceCard">
+          <h1>
+            <CgFigma />
+          </h1>
+          <p>UI / UX</p>
+        </div>
+      </div>
+      <div className="tech-stack">
+        <h3>{"//003.    .     <p> My TECHNOLOGIES </p>"}</h3>
+      </div>
+      <div className="stack">
+        <div className="mern-stack">
+          <h1>MERN</h1>
+          <h1>STACK</h1>
+        </div>
+        <SiHtml5 className="icon html" />
+        <SiCss3 className="icon css" />
+        <SiBootstrap className="icon bs" />
+        <FaSass className="icon scss" />
+        <DiJavascript className="icon js" />
+        <SiTypescript
+          className="icon
+        ts"
+        />
+        <SiJquery className="icon jq" />
+        <FaGithubSquare className="icon gh" />
+        <FaReact className="icon react" />
+        <SiRedux className="icon redux" />
+        <TbBrandNextjs className="icon next" />
+        <FaNodeJs className="icon node" />
+        <SiExpress className="icon express" />
+        <SiMongodb className="icon mongodb" />
+        <SiMysql className="icon sql" />
+        <SiPostgresql className="icon post" />
+      </div>
       {/* <img src={img1} alt=""  className="img2"/> */}
       <div className="pun">
         <marquee className="slideCon">

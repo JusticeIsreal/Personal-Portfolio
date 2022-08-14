@@ -87,96 +87,173 @@ $special-Color: #4c5eff;
       width: 80%;
     }
   }
-  .grid-stack-con {
-    background-color: rgba(13, 21, 34, 0);
-    @include flexDisplay(space-between, center, row);
+
+  .myServicesCon {
+    @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
-    .myServicesCon {
-      @include flexDisplay(space-around, top, row);
-      flex-wrap: wrap;
-      gap: 30px;
-      background-color: rgba(13, 21, 34, 0);
-      width: 60%;
-      min-width: 700px;
-      margin: 0 auto;
+    gap: 30px;
+    background-color: rgba(13, 21, 34, 0);
+    .serviceCard {
+      @include flexDisplay(center, top, column);
+      border: 1px solid royalblue;
+      background-color: rgba(13, 21, 34, 0.694);
+      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+      border-radius: 5px;
+      width: 40%;
+      margin-bottom: auto;
+      text-align: center;
+      padding: 5px 0;
+      transition: all 0.3s linear;
 
-      .serviceCard {
-        @include flexDisplay(center, top, column);
-        border: 1px solid royalblue;
-        background-color: rgba(13, 21, 34, 0.694);
-        box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-        border-radius: 5px;
-        width: 40%;
-        margin-bottom: auto;
-        text-align: center;
-        padding: 5px 0;
-        transition: all 0.3s linear;
+      &:hover {
+        transform: scale(1.2);
+        border: 2px solid royalblue;
+      }
 
-        &:hover {
-          transform: scale(1.2);
-          border: 2px solid royalblue;
-        }
+      @include responsive(bigphone) {
+        width: 35%;
+        max-width: 400px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 5px 10px;
+      }
+
+      h1 {
+        font-size: 50px;
 
         @include responsive(bigphone) {
-          width: 30%;
-          max-width: 300px;
-          height: 200px;
-          border-radius: 10px;
-          padding: 5px 10px;
-          border: 2px solid red;
+          font-size: 100px;
         }
+      }
+      p {
+        font-size: 8px;
+        color: rgb(150, 171, 217);
+        @include responsive(bigphone) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .tech-stack {
+    margin-top: 50px;
+    font-size: 10px;
+
+    @include responsive(bigphone) {
+      margin-top: 100px;
+      font-size: 20px;
+    }
+  }
+  .stack {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 75%;
+    height: 250px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+    transition: all 0.3s linear;
+    @include responsive(bigphone) {
+      margin-top: 150px;
+      width: 600px;
+      height: 600px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .mern-stack {
+      @include flexDisplay(space-around, center, column);
+      position: absolute;
+      top: 30%;
+      width: 100%;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      @include responsive(bigphone) {
+        top: 30%;
 
         h1 {
-          font-size: 50px;
-
-          @include responsive(bigphone) {
-            font-size: 100px;
-          }
-        }
-        p {
-          font-size: 8px;
-          color: rgb(150, 171, 217);
-          @include responsive(bigphone) {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    .stack {
-      border: 2px solid royalblue;
-      margin: 0 auto;
-      margin-top: 50px;
-      width: 200px;
-      height: 200px;
-      position: relative;
-      border-radius: 50%;
-      // opacity: 0.8;
-      // background-color: rgba(13, 21, 34, 0.694);
-      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
-      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-      animation: yy 15s linear infinite;
-
-      .icon {
-        position: absolute;
-        bottom: 0;
-
-        &::before {
-          content: "HTML";
-          font-size: 30px;
+          font-size: 100px;
         }
       }
     }
 
-    @keyframes yy {
-      0% {
-        transform: rotate(360deg);
+    .icon {
+      position: absolute;
+      font-size: 25px;
+      @include responsive(bigphone) {
+        font-size: 45px;
       }
-      // 50% {
-      //   transform: rotate(360deg);
-      // }
-      100% {
-        transform: rotate(0deg);
+    }
+    .react {
+      right: 0;
+      bottom: 0;
+      @include responsive(bigphone) {
+        font-size: 100px;
       }
+    }
+    .express {
+      right: 0;
+      font-size: 30px;
+      @include responsive(bigphone) {
+        font-size: 100px;
+      }
+    }
+    .node {
+      bottom: 0;
+      @include responsive(bigphone) {
+        font-size: 100px;
+      }
+    }
+    .js {
+      bottom: 0;
+      left: 50%;
+    }
+    .jq {
+      right: 0;
+      top: 22%;
+    }
+    .gh {
+      right: 0;
+      top: 72%;
+    }
+    .mongodb {
+      // left: 50%;
+      @include responsive(bigphone) {
+        font-size: 100px;
+      }
+    }
+    .ts {
+      bottom: 0;
+      left: 25%;
+    }
+    .redux {
+      bottom: 0;
+      left: 72%;
+    }
+    .next {
+      right: 0;
+      top: 45%;
+    }
+    .css {
+      top: 50%;
+    }
+    .scss {
+      top: 25%;
+    }
+    .sql {
+      top: 72%;
+    }
+    .post {
+      left: 25%;
+    }
+    .bs {
+      left: 70%;
+    }
+    .html {
+      left: 50%;
     }
   }
 
