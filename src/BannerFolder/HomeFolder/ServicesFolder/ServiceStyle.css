@@ -44,16 +44,27 @@
     width: 80%;
   }
 }
-.services-con .myServicesCon {
+.services-con .grid-stack-con {
+  background-color: rgba(13, 21, 34, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.services-con .grid-stack-con .myServicesCon {
   display: flex;
   justify-content: space-around;
   align-items: top;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   background-color: rgba(13, 21, 34, 0);
+  width: 60%;
+  min-width: 700px;
+  margin: 0 auto;
 }
-.services-con .myServicesCon .serviceCard {
+.services-con .grid-stack-con .myServicesCon .serviceCard {
   display: flex;
   justify-content: center;
   align-items: top;
@@ -68,40 +79,73 @@
   padding: 5px 0;
   transition: all 0.3s linear;
 }
-.services-con .myServicesCon .serviceCard:hover {
+.services-con .grid-stack-con .myServicesCon .serviceCard:hover {
   transform: scale(1.2);
   border: 2px solid royalblue;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard {
-    width: 35%;
-    max-width: 400px;
-    height: 170px;
+  .services-con .grid-stack-con .myServicesCon .serviceCard {
+    width: 30%;
+    max-width: 300px;
+    height: 200px;
     border-radius: 10px;
-    padding: 0 0 15px 0;
+    padding: 5px 10px;
+    border: 2px solid red;
   }
 }
-.services-con .myServicesCon .serviceCard h1 {
+.services-con .grid-stack-con .myServicesCon .serviceCard h1 {
   font-size: 50px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard h1 {
+  .services-con .grid-stack-con .myServicesCon .serviceCard h1 {
     font-size: 100px;
   }
 }
-.services-con .myServicesCon .serviceCard p {
+.services-con .grid-stack-con .myServicesCon .serviceCard p {
   font-size: 8px;
   color: rgb(150, 171, 217);
 }
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard p {
+  .services-con .grid-stack-con .myServicesCon .serviceCard p {
     font-size: 20px;
   }
 }
-.services-con .img2 {
-  margin-top: 20px;
-  width: 100%;
-  opacity: 0.8;
+.services-con .grid-stack-con .stack {
+  border: 2px solid royalblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+  -webkit-animation: yy 15s linear infinite;
+          animation: yy 15s linear infinite;
+}
+.services-con .grid-stack-con .stack .icon {
+  position: absolute;
+  bottom: 0;
+}
+.services-con .grid-stack-con .stack .icon::before {
+  content: "HTML";
+  font-size: 30px;
+}
+@-webkit-keyframes yy {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes yy {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .services-con .pun {
   border-top: 1px solid royalblue;
