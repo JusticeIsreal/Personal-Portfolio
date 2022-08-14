@@ -25,7 +25,7 @@ function About() {
         <h3>{"//002.    .     <p> ABOUT ME ? </p>"}</h3>
       </div>
       <div className="mappedHeading">
-        <h3>MyPitch:</h3>
+        <h3>MyPitch :</h3>
       </div>
 
       {Pitch.map((item) => (
@@ -67,12 +67,16 @@ function About() {
       <div className="pun">
         <marquee className="slideCon">
           <p>
-            {"❖ Web design ❖"}
-            {" Web Application Development ❖"}
+            {"❖ Full Stack Developer "}
+            {
+              "❖ IBM Engineering Systems Design Rhapsody for Model Based Systems Engineering (IBM) ❖"
+            }
+            {" Scrum Fundamentals Certified (SFC) ❖"}
             {" Desktop Application Development ❖"}
-            {" UI / UX ❖"}
-            {" Product Design ❖"}
-            {" Graphics Design ❖"}
+            {
+              " Master Project Manager - International Project Management Board Certification (MPM) ❖"
+            }
+            {" Project management fundamentals (IBM) ❖"}
           </p>
         </marquee>
       </div>

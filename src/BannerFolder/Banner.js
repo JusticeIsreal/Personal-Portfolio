@@ -39,6 +39,7 @@ function Banner() {
           <div className="eye2" ref={eyeRef2}></div>
         </div>
         <Home />
+       
       </div>
     </section>
   );
