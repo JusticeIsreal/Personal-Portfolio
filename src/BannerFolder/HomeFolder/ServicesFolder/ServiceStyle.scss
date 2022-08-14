@@ -146,16 +146,16 @@ $special-Color: #4c5eff;
   .stack {
     margin: 0 auto;
     margin-top: 30px;
-    width: 75%;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     position: relative;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
     transition: all 0.3s linear;
     @include responsive(bigphone) {
-      margin-top: 150px;
-      width: 600px;
-      height: 600px;
+      margin-top: 50px;
+      width: 500px;
+      height: 500px;
     }
     &:hover {
       transform: scale(1.1);
@@ -166,9 +166,14 @@ $special-Color: #4c5eff;
       position: absolute;
       top: 30%;
       width: 100%;
+      border-radius: 50%;
+      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+      // border: 2px solid red;
 
       h1 {
         font-size: 40px;
+        color: rgb(111, 143, 213);
+        // box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
       }
 
       @include responsive(bigphone) {
@@ -182,7 +187,9 @@ $special-Color: #4c5eff;
 
     .icon {
       position: absolute;
-      font-size: 25px;
+      font-size: 20px;
+      // box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+
       @include responsive(bigphone) {
         font-size: 45px;
       }
@@ -190,19 +197,21 @@ $special-Color: #4c5eff;
     .react {
       right: 0;
       bottom: 0;
+      font-size: 40px;
       @include responsive(bigphone) {
         font-size: 100px;
       }
     }
     .express {
       right: 0;
-      font-size: 30px;
+      font-size: 40px;
       @include responsive(bigphone) {
         font-size: 100px;
       }
     }
     .node {
       bottom: 0;
+      font-size: 40px;
       @include responsive(bigphone) {
         font-size: 100px;
       }
@@ -221,6 +230,7 @@ $special-Color: #4c5eff;
     }
     .mongodb {
       // left: 50%;
+      font-size: 40px;
       @include responsive(bigphone) {
         font-size: 100px;
       }

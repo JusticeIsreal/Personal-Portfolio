@@ -111,8 +111,8 @@
 .services-con .stack {
   margin: 0 auto;
   margin-top: 30px;
-  width: 75%;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   position: relative;
   border-radius: 50%;
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
@@ -120,9 +120,9 @@
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack {
-    margin-top: 150px;
-    width: 600px;
-    height: 600px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
   }
 }
 .services-con .stack:hover {
@@ -136,9 +136,12 @@
   position: absolute;
   top: 30%;
   width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
 }
 .services-con .stack .mern-stack h1 {
   font-size: 40px;
+  color: rgb(111, 143, 213);
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .mern-stack {
@@ -150,7 +153,7 @@
 }
 .services-con .stack .icon {
   position: absolute;
-  font-size: 25px;
+  font-size: 20px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .icon {
@@ -160,6 +163,7 @@
 .services-con .stack .react {
   right: 0;
   bottom: 0;
+  font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .react {
@@ -168,7 +172,7 @@
 }
 .services-con .stack .express {
   right: 0;
-  font-size: 30px;
+  font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .express {
@@ -177,6 +181,7 @@
 }
 .services-con .stack .node {
   bottom: 0;
+  font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .node {
@@ -194,6 +199,9 @@
 .services-con .stack .gh {
   right: 0;
   top: 72%;
+}
+.services-con .stack .mongodb {
+  font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .stack .mongodb {
