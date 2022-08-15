@@ -1,4 +1,4 @@
-import "./ServiceStyle.css";
+import "./PortfolioStyle.css";
 import { MdSendToMobile } from "react-icons/md";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaDesktop, FaGithubSquare, FaReact, FaNodeJs } from "react-icons/fa";
@@ -8,14 +8,14 @@ import { CgFigma } from "react-icons/cg";
 import { SiHtml5, SiCss3, SiExpress, SiMongodb } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 
-function Service() {
+function Portfolio() {
   return (
     <main className=" services-con">
       <div className=" services">
-        <h3>{"//003.    .     <p> SERVICES ? </p>"}</h3>
+        <h3>{"//004.    .     <p> PORTFOLIO ? </p>"}</h3>
       </div>
       <div className="what-i-do">
-        <h3>What I do :</h3>
+        <h3>Projects :</h3>
       </div>
 
       <div className="myServicesCon ">
@@ -113,4 +113,4 @@ function Service() {
   );
 }
 
-export default Service;
+export default Portfolio;

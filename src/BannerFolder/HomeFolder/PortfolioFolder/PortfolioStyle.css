@@ -24,15 +24,11 @@
   background-color: rgba(13, 21, 34, 0);
 }
 .services-con .services {
-  font-size: 15px;
-  display: flex;
-  justify-content: space-around;
-  align-items: top;
-  flex-direction: row;
+  font-size: 10px;
 }
 @media only screen and (min-width: 750px) {
   .services-con .services {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .services-con .what-i-do {

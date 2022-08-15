@@ -69,11 +69,10 @@ $special-Color: #4c5eff;
   background-color: rgba(13, 21, 34, 0);
 
   .services {
-    font-size: 15px;
-    @include flexDisplay(space-around, top, row);
+    font-size: 10px;
 
     @include responsive(bigphone) {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   .what-i-do {

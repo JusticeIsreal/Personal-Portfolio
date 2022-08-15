@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./AboutFolder/About.js";
-import Service from "./ServicesFolder/Service.js"
+import Service from "./ServicesFolder/Service.js";
+import Portfolio from "./PortfolioFolder/Portfolio.js";
 import "./Home.css";
 import cv from "../../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 
@@ -35,6 +36,7 @@ function Home() {
 
       <About />
       <Service />
+      <Portfolio />
     </main>
   );
 }

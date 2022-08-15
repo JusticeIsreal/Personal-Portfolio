@@ -64,22 +64,20 @@ $special-Color: #4c5eff;
 .aboutMe {
   border: 1px solid royalblue;
   margin: 0 auto;
-  // background-color: rgba(97, 155, 255, 0.062);
-  // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
   background-color: rgba(13, 21, 34, 0.694);
-  // box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   margin-top: 100px;
   border-radius: 10px;
   padding: 20px 5px;
   width: 100%;
-  max-width: 2000px;
+  max-width: 1600px;
 
   .aboutMe-container {
-    font-size: 10px;
+    font-size: 15px;
+    @include flexDisplay(space-around, top, row);
 
     @include responsive(bigphone) {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
   .mappedHeading {
