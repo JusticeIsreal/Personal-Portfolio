@@ -147,8 +147,8 @@ $special-Color: #4c5eff;
   .stack {
     margin: 0 auto;
     margin-top: 30px;
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
     position: relative;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
@@ -184,9 +184,6 @@ $special-Color: #4c5eff;
       }
 
       .punt {
-        border-top: 1px solid royalblue;
-        border-bottom: 1px solid royalblue;
-        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
         height: 30px;
         margin: 0 auto;
         width: 80%;
@@ -242,15 +239,11 @@ $special-Color: #4c5eff;
     }
     .js {
       bottom: 0;
-      left: 50%;
-    }
-    .jq {
-      right: 0;
-      top: 22%;
+      left: 47%;
     }
     .gh {
       right: 0;
-      top: 72%;
+      top: 47%;
     }
     .mongodb {
       // left: 50%;
@@ -259,35 +252,13 @@ $special-Color: #4c5eff;
         font-size: 50px;
       }
     }
-    .ts {
-      bottom: 0;
-      left: 25%;
-    }
-    .redux {
-      bottom: 0;
-      left: 72%;
-    }
-    .next {
-      right: 0;
-      top: 45%;
-    }
+
     .css {
-      top: 50%;
+      top: 47%;
     }
-    .scss {
-      top: 25%;
-    }
-    .sql {
-      top: 72%;
-    }
-    .post {
-      left: 25%;
-    }
-    .bs {
-      left: 70%;
-    }
+
     .html {
-      left: 50%;
+      left: 47%;
     }
   }
 }

@@ -78,7 +78,7 @@ function Service() {
         </div>
       </div>
       <div className="tech-stack">
-        <h3>{"//003.    .     <p> My TECHNOLOGIES </p>"}</h3>
+        <h3>{"//003.    .     <p> STACK </p>"}</h3>
       </div>
       <div className="stack">
         <div className="mern-stack">
@@ -125,20 +125,12 @@ function Service() {
         </div>
         <SiHtml5 className="icon html" />
         <SiCss3 className="icon css" />
-        <SiBootstrap className="icon bs" />
-        <FaSass className="icon scss" />
         <DiJavascript className="icon js" />
-        <SiTypescript className="icon ts" />
-        <SiJquery className="icon jq" />
         <FaGithubSquare className="icon gh" />
         <FaReact className="icon react" />
-        <SiRedux className="icon redux" />
-        <TbBrandNextjs className="icon next" />
         <FaNodeJs className="icon node" />
         <SiExpress className="icon express" />
         <SiMongodb className="icon mongodb" />
-        <SiMysql className="icon sql" />
-        <SiPostgresql className="icon post" />
       </div>
     </main>
   );
