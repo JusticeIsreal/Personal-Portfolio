@@ -16,14 +16,14 @@
   background-color: royalblue;
 }
 
-.services-co {
+.Portfolio-con {
   margin: 0 auto;
   margin-top: 100px;
   width: 100%;
   max-width: 2400px;
   background-color: rgba(13, 21, 34, 0);
 }
-.services-co .service {
+.Portfolio-con .Portfolio {
   font-size: 15px;
   display: flex;
   justify-content: space-around;
@@ -31,24 +31,24 @@
   flex-direction: row;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .service {
+  .Portfolio-con .Portfolio {
     font-size: 25px;
   }
 }
-.services-co .what-i-do {
+.Portfolio-con .project {
   width: 90%;
   padding: 15px;
   margin-top: 30px;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .what-i-do {
+  .Portfolio-con .project {
     font-size: 20px;
     margin: 0 auto;
     margin-top: 30px;
     width: 80%;
   }
 }
-.services-co .myServicesCon {
+.Portfolio-con .myProjectCon {
   display: flex;
   justify-content: space-around;
   align-items: top;
@@ -59,9 +59,9 @@
   width: 90%;
   margin: 0 auto;
 }
-.services-co .myServicesCon .serviceCar {
+.Portfolio-con .myProjectCon .projectCard {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: top;
   flex-direction: column;
   border: 1px solid rgba(65, 105, 225, 0.36);
@@ -72,93 +72,94 @@
   margin-bottom: auto;
   text-align: center;
   padding: 5px 0;
-  transition: all 0.3s linear;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .myServicesCon .serviceCar {
+  .Portfolio-con .myProjectCon .projectCard {
     width: 45%;
     max-width: 400px;
     border-radius: 10px;
     padding: 10px 10px;
   }
 }
-.services-co .myServicesCon .serviceCar h1 {
-  font-size: 50px;
+.Portfolio-con .myProjectCon .projectCard .project-name {
+  font-size: 10px;
+  padding: 10px 0;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .myServicesCon .serviceCar h1 {
-    font-size: 100px;
+  .Portfolio-con .myProjectCon .projectCard .project-name {
+    font-size: 25px;
   }
 }
-.services-co .myServicesCon .serviceCar p {
-  font-size: 8px;
+.Portfolio-con .myProjectCon .projectCard .details .view-project {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: rgba(13, 21, 34, 0.694);
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+  border: 1px solid rgba(65, 105, 225, 0.36);
+  border-radius: 10px;
+  color: rgb(150, 171, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transform: scale(0.9);
+  width: 95%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.Portfolio-con .myProjectCon .projectCard .details .view-project:hover {
+  transform: scale(1);
+}
+.Portfolio-con .myProjectCon .projectCard .details .project-description {
+  margin: 10px 0;
+  word-spacing: 2px;
+  line-height: 15px;
+  font-size: 10px;
   color: rgb(150, 171, 217);
 }
 @media only screen and (min-width: 750px) {
-  .services-co .myServicesCon .serviceCar p {
-    font-size: 20px;
+  .Portfolio-con .myProjectCon .projectCard .details .project-description {
+    line-height: 15px;
+    word-spacing: 5px;
   }
 }
-.services-co .tech-stack {
-  margin-top: 50px;
+.Portfolio-con .myProjectCon .projectCard .details .project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
+  gap: 10px;
   font-size: 10px;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .tech-stack {
-    margin-top: 100px;
-    font-size: 20px;
+  .Portfolio-con .myProjectCon .projectCard .details .project-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
   }
 }
-.services-co .stack {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 210px;
-  height: 210px;
-  position: relative;
-  border-radius: 50%;
+.Portfolio-con .myProjectCon .projectCard .details .project-link a {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgba(150, 171, 217, 0.632);
+  background-color: rgba(13, 21, 34, 0.694);
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-  transition: all 0.3s linear;
-  opacity: 0.8;
+  border: 1px solid rgba(65, 105, 225, 0.36);
+  transform: scale(0.9);
 }
 @media only screen and (min-width: 750px) {
-  .services-co .stack {
-    background-color: rgba(13, 21, 34, 0.504);
-    margin-top: 50px;
-    width: 400px;
-    height: 400px;
+  .Portfolio-con .myProjectCon .projectCard .details .project-link a {
+    width: 40%;
   }
 }
-.services-co .stack .mern-stack {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+.Portfolio-con .myProjectCon .projectCard .details .project-link a:hover {
+  transform: scale(1);
 }
-.services-co .stack .mern-stack h1 {
-  font-size: 40px;
-  color: rgb(111, 143, 213);
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .mern-stack {
-    top: 30%;
-  }
-  .services-co .stack .mern-stack h1 {
-    font-size: 70px;
-  }
-}
-.services-co .stack .mern-stack .punt {
-  height: 30px;
-  margin: 0 auto;
-  width: 80%;
-  overflow: hidden;
-  position: absolute;
-}
-.services-co .stack .mern-stack .punt .slideCont {
+.Portfolio-con .slideCont {
   -webkit-animation: 20s linear infinite;
           animation: 20s linear infinite;
   display: flex;
@@ -167,73 +168,12 @@
   flex-direction: row;
   padding-top: 5px;
 }
-.services-co .stack .mern-stack .punt .slideCont p {
+.Portfolio-con .slideCont p {
   font-size: 13px;
   color: rgb(150, 171, 217);
-  word-spacing: 5px;
-  letter-spacing: 3px;
 }
 @media only screen and (min-width: 750px) {
-  .services-co .stack .mern-stack .punt .slideCont p {
+  .Portfolio-con .slideCont p {
     font-size: 17px;
   }
-}
-.services-co .stack .icon {
-  position: absolute;
-  font-size: 20px;
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .icon {
-    font-size: 30px;
-  }
-}
-.services-co .stack .react {
-  right: 0;
-  bottom: 0;
-  font-size: 40px;
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .react {
-    font-size: 50px;
-  }
-}
-.services-co .stack .express {
-  right: 0;
-  font-size: 40px;
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .express {
-    font-size: 50px;
-  }
-}
-.services-co .stack .node {
-  bottom: 0;
-  font-size: 40px;
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .node {
-    font-size: 50px;
-  }
-}
-.services-co .stack .js {
-  bottom: 0;
-  left: 47%;
-}
-.services-co .stack .gh {
-  right: 0;
-  top: 47%;
-}
-.services-co .stack .mongodb {
-  font-size: 40px;
-}
-@media only screen and (min-width: 750px) {
-  .services-co .stack .mongodb {
-    font-size: 50px;
-  }
-}
-.services-co .stack .css {
-  top: 47%;
-}
-.services-co .stack .html {
-  left: 47%;
 }/*# sourceMappingURL=PortfolioStyle.css.map */

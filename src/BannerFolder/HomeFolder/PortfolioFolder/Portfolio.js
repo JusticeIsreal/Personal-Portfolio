@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 // import ts from "../../../../src/images/drone-app.png";
 import Projects from "./ProjectsData.js";
@@ -8,29 +7,32 @@ function Portfolio() {
   const [data, setData] = useState(Projects);
 
   return (
-    <main className=" services-co">
-      <div className=" service">
+    <main className=" Portfolio-con">
+      <div className="Portfolio">
         <h3>{"//004.    .     <p> PORTFOLIO ? </p>"}</h3>
       </div>
-      <div className="what-i-do">
+      <div className="project">
         <h3>Projects :</h3>
       </div>
-      <div className="myServicesCon ">
+      <div className="myProjectCon">
         {data.map((item) => {
           const { id, project, details, source_code, live_project, img } = item;
           return (
-            <div key={id} className="serviceCar">
-              <h3>{project}</h3>
+            <div key={id} className="projectCard">
+              <h3 className="project-name">{project}</h3>
               <img src={img} alt={project} />
-              <details>
-                <summary>view project</summary>
-                <p>{details}</p>
-                <a href={source_code} target="blank">
-                  SOURCE CODE
-                </a>
-                <a href={live_project} target="blank">
-                  LIVE SITE
-                </a>
+              <details className="details">
+                <summary className="view-project">view project</summary>
+                <p className="project-description">{details}</p>
+
+                <div className="project-link">
+                  <a href={source_code} target="blank" className="source-code">
+                    SOURCE CODE
+                  </a>
+                  <a href={live_project} target="blank" className="live-site">
+                    LIVE SITE
+                  </a>
+                </div>
               </details>
             </div>
           );

@@ -61,14 +61,14 @@ $special-Color: #4c5eff;
   }
 }
 
-.services-co {
+.Portfolio-con {
   margin: 0 auto;
   margin-top: 100px;
   width: 100%;
   max-width: 2400px;
   background-color: rgba(13, 21, 34, 0);
 
-  .service {
+  .Portfolio {
     font-size: 15px;
     @include flexDisplay(space-around, top, row);
 
@@ -76,7 +76,7 @@ $special-Color: #4c5eff;
       font-size: 25px;
     }
   }
-  .what-i-do {
+  .project {
     width: 90%;
     padding: 15px;
     margin-top: 30px;
@@ -89,7 +89,7 @@ $special-Color: #4c5eff;
     }
   }
 
-  .myServicesCon {
+  .myProjectCon {
     @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
     gap: 30px;
@@ -97,8 +97,8 @@ $special-Color: #4c5eff;
     width: 90%;
     margin: 0 auto;
 
-    .serviceCar {
-      @include flexDisplay(center, top, column);
+    .projectCard {
+      @include flexDisplay(space-between, top, column);
       border: 1px solid rgba(65, 105, 225, 0.36);
       background-color: rgba(13, 21, 34, 0.694);
       box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
@@ -107,8 +107,6 @@ $special-Color: #4c5eff;
       margin-bottom: auto;
       text-align: center;
       padding: 5px 0;
-      transition: all 0.3s linear;
-
 
       @include responsive(bigphone) {
         width: 45%;
@@ -116,149 +114,93 @@ $special-Color: #4c5eff;
         border-radius: 10px;
         padding: 10px 10px;
       }
-
-      h1 {
-        font-size: 50px;
+      .project-name {
+        font-size: 10px;
+        padding: 10px 0;
 
         @include responsive(bigphone) {
-          font-size: 100px;
-        }
-      }
-      p {
-        font-size: 8px;
-        color: rgb(150, 171, 217);
-        @include responsive(bigphone) {
-          font-size: 20px;
-        }
-      }
-    }
-  }
-  .tech-stack {
-    margin-top: 50px;
-    font-size: 10px;
-
-    @include responsive(bigphone) {
-      margin-top: 100px;
-      font-size: 20px;
-    }
-  }
-  .stack {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 210px;
-    height: 210px;
-    position: relative;
-    border-radius: 50%;
-    box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-    transition: all 0.3s linear;
-    opacity: 0.8;
-
-    @include responsive(bigphone) {
-      background-color: rgba(13, 21, 34, 0.504);
-      margin-top: 50px;
-      width: 400px;
-      height: 400px;
-    }
-
-    .mern-stack {
-      @include flexDisplay(space-around, center, column);
-      position: absolute;
-      top: 30%;
-      width: 100%;
-      border-radius: 50%;
-      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-
-      h1 {
-        font-size: 40px;
-        color: rgb(111, 143, 213);
-      }
-
-      @include responsive(bigphone) {
-        top: 30%;
-
-        h1 {
-          font-size: 70px;
+          font-size: 25px;
         }
       }
 
-      .punt {
-        height: 30px;
-        margin: 0 auto;
-        width: 80%;
-        overflow: hidden;
-        position: absolute;
+      .details {
+        .view-project {
+          margin: 0 auto;
+          margin-top: 10px;
+          padding: 10px 0;
+          background-color: rgba(13, 21, 34, 0.694);
+          box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+          border: 1px solid rgba(65, 105, 225, 0.36);
+          border-radius: 10px;
+          color: rgb(150, 171, 217);
+          @include flexDisplay(center, center, row);
+          transform: scale(0.9);
+          width: 95%;
+          cursor: pointer;
+          transition: all 0.2s linear;
 
-        .slideCont {
-          animation: 20s linear infinite;
-          @include flexDisplay(space-between, center, row);
-          padding-top: 5px;
+          &:hover {
+            transform: scale(1);
+          }
+        }
+        .project-description {
+          margin: 10px 0;
+          word-spacing: 2px;
+          line-height: 15px;
+          font-size: 10px;
+          color: rgb(150, 171, 217);
 
-          p {
-            font-size: 13px;
-            color: rgb(150, 171, 217);
+          @include responsive(bigphone) {
+            line-height: 15px;
             word-spacing: 5px;
-            letter-spacing: 3px;
+          }
+        }
 
+        .project-link {
+          @include flexDisplay(space-between, center, column);
+          padding: 5px 0;
+          gap: 10px;
+
+          font-size: 10px;
+          @include responsive(bigphone) {
+            @include flexDisplay(space-around, center, row);
+          }
+
+          a {
+            width: 90%;
+            padding: 5px;
+            border-radius: 5px;
+            color: rgba(150, 171, 217, 0.632);
+            background-color: rgba(13, 21, 34, 0.694);
+            box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+            border: 1px solid rgba(65, 105, 225, 0.36);
+            transform: scale(0.9);
             @include responsive(bigphone) {
-              font-size: 17px;
+              width: 40%;
+            }
+
+            &:hover {
+              transform: scale(1);
             }
           }
         }
       }
     }
+  }
+  .slideCont {
+    animation: 20s linear infinite;
+    @include flexDisplay(space-between, center, row);
+    padding-top: 5px;
 
-    .icon {
-      position: absolute;
-      font-size: 20px;
+    p {
+      font-size: 13px;
+      color: rgb(150, 171, 217);
+      // word-spacing: 5px;
+      // letter-spacing: 3px;
 
       @include responsive(bigphone) {
-        font-size: 30px;
+        font-size: 17px;
       }
-    }
-    .react {
-      right: 0;
-      bottom: 0;
-      font-size: 40px;
-      @include responsive(bigphone) {
-        font-size: 50px;
-      }
-    }
-    .express {
-      right: 0;
-      font-size: 40px;
-      @include responsive(bigphone) {
-        font-size: 50px;
-      }
-    }
-    .node {
-      bottom: 0;
-      font-size: 40px;
-      @include responsive(bigphone) {
-        font-size: 50px;
-      }
-    }
-    .js {
-      bottom: 0;
-      left: 47%;
-    }
-    .gh {
-      right: 0;
-      top: 47%;
-    }
-    .mongodb {
-      // left: 50%;
-      font-size: 40px;
-      @include responsive(bigphone) {
-        font-size: 50px;
-      }
-    }
-
-    .css {
-      top: 47%;
-    }
-
-    .html {
-      left: 47%;
     }
   }
 }
