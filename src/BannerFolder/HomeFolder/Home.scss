@@ -85,6 +85,7 @@ main {
     gap: 10px;
     width: 100%;
     padding: 10px;
+     color: rgb(114, 150, 226);
     @include flexDisplay(space-between, center, column);
 
     @include responsive(tablet) {

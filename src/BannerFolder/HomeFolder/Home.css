@@ -42,6 +42,7 @@ main .name {
   gap: 10px;
   width: 100%;
   padding: 10px;
+  color: rgb(114, 150, 226);
   display: flex;
   justify-content: space-between;
   align-items: center;

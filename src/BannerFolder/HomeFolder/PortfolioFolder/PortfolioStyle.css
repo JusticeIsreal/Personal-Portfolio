@@ -71,7 +71,7 @@
   width: 45%;
   margin-bottom: auto;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px;
 }
 @media only screen and (min-width: 750px) {
   .Portfolio-con .myProjectCon .projectCard {
@@ -149,15 +149,11 @@
   background-color: rgba(13, 21, 34, 0.694);
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   border: 1px solid rgba(65, 105, 225, 0.36);
-  transform: scale(0.9);
 }
 @media only screen and (min-width: 750px) {
   .Portfolio-con .myProjectCon .projectCard .details .project-link a {
     width: 40%;
   }
-}
-.Portfolio-con .myProjectCon .projectCard .details .project-link a:hover {
-  transform: scale(1);
 }
 .Portfolio-con .slideCont {
   -webkit-animation: 20s linear infinite;
