@@ -1,14 +1,14 @@
 import "./PortfolioStyle.css";
-import { MdSendToMobile } from "react-icons/md";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaDesktop, FaGithubSquare, FaReact, FaNodeJs } from "react-icons/fa";
-import { ImDatabase } from "react-icons/im";
-import { AiOutlineLineChart } from "react-icons/ai";
-import { CgFigma } from "react-icons/cg";
+import { FaGithubSquare, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiHtml5, SiCss3, SiExpress, SiMongodb } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
+import { useState } from "react";
+import ts from "../../../../src/images/drone-app.png";
+import Projects from "./ProjectsData.js";
 
 function Portfolio() {
+  const [data, setData] = useState(Projects);
+
   return (
     <main className=" services-con">
       <div className=" services">
@@ -17,45 +17,26 @@ function Portfolio() {
       <div className="what-i-do">
         <h3>Projects :</h3>
       </div>
-
       <div className="myServicesCon ">
-        <div className="serviceCard">
-          <h1>
-            <GiEarthAmerica />
-          </h1>
-          <p>Web Application Development</p>
-        </div>
-        <div className="serviceCard">
-          <h1>
-            <MdSendToMobile />
-          </h1>
-          <p>Mobile Application Development</p>
-        </div>
-        <div className="serviceCard">
-          <h1>
-            <FaDesktop />
-          </h1>
-          <p>Desktop Application Development</p>
-        </div>
-        <div className="serviceCard">
-          <h1>
-            {" "}
-            <ImDatabase />{" "}
-          </h1>
-          <p>Database Management</p>
-        </div>
-        <div className="serviceCard">
-          <h1>
-            <AiOutlineLineChart />
-          </h1>
-          <p>Project Management</p>
-        </div>
-        <div className="serviceCard">
-          <h1>
-            <CgFigma />
-          </h1>
-          <p>UI / UX</p>
-        </div>
+        {data.map((item) => {
+          const { id, project, details, source_code, live_project, img } = item;
+          return (
+            <div key={id} className="serviceCard">
+              <h3>{project}</h3>
+              <img src={img} alt={project} />
+              <details>
+                <summary>view project</summary>
+                <p>{details}</p>
+                <a href={source_code} target="blank">
+                  SOURCE CODE
+                </a>
+                <a href={live_project} target="blank">
+                  LIVE SITE
+                </a>
+              </details>
+            </div>
+          );
+        })}
       </div>
       <div className="stack">
         <div className="mern-stack">
@@ -66,35 +47,20 @@ function Portfolio() {
             <marquee className="slideCont">
               <p>
                 {"❖ HTML ❖"}
-
                 {" CSS ❖"}
-
                 {" Sass ❖"}
-
                 {" Bootstrap ❖"}
-
                 {" JavaScript ❖"}
-
                 {" TypeScript ❖"}
-
                 {" Jquery ❖"}
-
                 {" GitHub ❖"}
-
                 {" React.Js ❖"}
-
                 {" Redux ❖"}
-
                 {" Next ❖"}
-
                 {" Node.Js ❖"}
-
                 {" Express ❖"}
-
                 {" MongoDB ❖"}
-
                 {" MySQL ❖"}
-
                 {" PostgreSQL ❖"}
               </p>
             </marquee>

@@ -95,6 +95,7 @@ $special-Color: #4c5eff;
     background-color: rgba(13, 21, 34, 0);
     width: 90%;
     margin: 0 auto;
+
     .serviceCard {
       @include flexDisplay(center, top, column);
       border: 1px solid royalblue;
@@ -135,6 +136,15 @@ $special-Color: #4c5eff;
           font-size: 20px;
         }
       }
+    }
+
+    .project {
+      border: 2px solid red;
+      background: url(/src/images/e-com.png) center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+     
     }
   }
   .tech-stack {

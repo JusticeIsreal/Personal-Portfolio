@@ -101,6 +101,13 @@
     font-size: 20px;
   }
 }
+.services-con .myServicesCon .project {
+  border: 2px solid red;
+  background: url(/src/images/e-com.png) center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .services-con .tech-stack {
   margin-top: 50px;
   font-size: 10px;
@@ -238,4 +245,4 @@
 }
 .services-con .stack .html {
   left: 47%;
-}/*# sourceMappingURL=ServiceStyle.css.map */
+}/*# sourceMappingURL=PortfolioStyle.css.map */
