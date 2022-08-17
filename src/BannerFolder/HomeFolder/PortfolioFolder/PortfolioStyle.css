@@ -16,35 +16,39 @@
   background-color: royalblue;
 }
 
-.services-con {
+.services-co {
   margin: 0 auto;
   margin-top: 100px;
   width: 100%;
   max-width: 2400px;
   background-color: rgba(13, 21, 34, 0);
 }
-.services-con .services {
-  font-size: 10px;
+.services-co .service {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  flex-direction: row;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .services {
-    font-size: 20px;
+  .services-co .service {
+    font-size: 25px;
   }
 }
-.services-con .what-i-do {
+.services-co .what-i-do {
   width: 90%;
   padding: 15px;
   margin-top: 30px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .what-i-do {
+  .services-co .what-i-do {
     font-size: 20px;
     margin: 0 auto;
     margin-top: 30px;
     width: 80%;
   }
 }
-.services-con .myServicesCon {
+.services-co .myServicesCon {
   display: flex;
   justify-content: space-around;
   align-items: top;
@@ -55,70 +59,57 @@
   width: 90%;
   margin: 0 auto;
 }
-.services-con .myServicesCon .serviceCard {
+.services-co .myServicesCon .serviceCar {
   display: flex;
   justify-content: center;
   align-items: top;
   flex-direction: column;
-  border: 1px solid royalblue;
+  border: 1px solid rgba(65, 105, 225, 0.36);
   background-color: rgba(13, 21, 34, 0.694);
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   border-radius: 5px;
-  width: 40%;
+  width: 45%;
   margin-bottom: auto;
   text-align: center;
   padding: 5px 0;
   transition: all 0.3s linear;
 }
-.services-con .myServicesCon .serviceCard:hover {
-  transform: scale(1.2);
-  border: 2px solid royalblue;
-  background-color: rgba(26, 41, 66, 0.838);
-}
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard {
-    width: 35%;
+  .services-co .myServicesCon .serviceCar {
+    width: 45%;
     max-width: 400px;
-    height: 200px;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 10px 10px;
   }
 }
-.services-con .myServicesCon .serviceCard h1 {
+.services-co .myServicesCon .serviceCar h1 {
   font-size: 50px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard h1 {
+  .services-co .myServicesCon .serviceCar h1 {
     font-size: 100px;
   }
 }
-.services-con .myServicesCon .serviceCard p {
+.services-co .myServicesCon .serviceCar p {
   font-size: 8px;
   color: rgb(150, 171, 217);
 }
 @media only screen and (min-width: 750px) {
-  .services-con .myServicesCon .serviceCard p {
+  .services-co .myServicesCon .serviceCar p {
     font-size: 20px;
   }
 }
-.services-con .myServicesCon .project {
-  border: 2px solid red;
-  background: url(/src/images/e-com.png) center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.services-con .tech-stack {
+.services-co .tech-stack {
   margin-top: 50px;
   font-size: 10px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .tech-stack {
+  .services-co .tech-stack {
     margin-top: 100px;
     font-size: 20px;
   }
 }
-.services-con .stack {
+.services-co .stack {
   margin: 0 auto;
   margin-top: 30px;
   width: 210px;
@@ -130,14 +121,14 @@
   opacity: 0.8;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack {
+  .services-co .stack {
     background-color: rgba(13, 21, 34, 0.504);
     margin-top: 50px;
     width: 400px;
     height: 400px;
   }
 }
-.services-con .stack .mern-stack {
+.services-co .stack .mern-stack {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -148,26 +139,26 @@
   border-radius: 50%;
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
 }
-.services-con .stack .mern-stack h1 {
+.services-co .stack .mern-stack h1 {
   font-size: 40px;
   color: rgb(111, 143, 213);
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .mern-stack {
+  .services-co .stack .mern-stack {
     top: 30%;
   }
-  .services-con .stack .mern-stack h1 {
+  .services-co .stack .mern-stack h1 {
     font-size: 70px;
   }
 }
-.services-con .stack .mern-stack .punt {
+.services-co .stack .mern-stack .punt {
   height: 30px;
   margin: 0 auto;
   width: 80%;
   overflow: hidden;
   position: absolute;
 }
-.services-con .stack .mern-stack .punt .slideCont {
+.services-co .stack .mern-stack .punt .slideCont {
   -webkit-animation: 20s linear infinite;
           animation: 20s linear infinite;
   display: flex;
@@ -176,73 +167,73 @@
   flex-direction: row;
   padding-top: 5px;
 }
-.services-con .stack .mern-stack .punt .slideCont p {
+.services-co .stack .mern-stack .punt .slideCont p {
   font-size: 13px;
   color: rgb(150, 171, 217);
   word-spacing: 5px;
   letter-spacing: 3px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .mern-stack .punt .slideCont p {
+  .services-co .stack .mern-stack .punt .slideCont p {
     font-size: 17px;
   }
 }
-.services-con .stack .icon {
+.services-co .stack .icon {
   position: absolute;
   font-size: 20px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .icon {
+  .services-co .stack .icon {
     font-size: 30px;
   }
 }
-.services-con .stack .react {
+.services-co .stack .react {
   right: 0;
   bottom: 0;
   font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .react {
+  .services-co .stack .react {
     font-size: 50px;
   }
 }
-.services-con .stack .express {
+.services-co .stack .express {
   right: 0;
   font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .express {
+  .services-co .stack .express {
     font-size: 50px;
   }
 }
-.services-con .stack .node {
+.services-co .stack .node {
   bottom: 0;
   font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .node {
+  .services-co .stack .node {
     font-size: 50px;
   }
 }
-.services-con .stack .js {
+.services-co .stack .js {
   bottom: 0;
   left: 47%;
 }
-.services-con .stack .gh {
+.services-co .stack .gh {
   right: 0;
   top: 47%;
 }
-.services-con .stack .mongodb {
+.services-co .stack .mongodb {
   font-size: 40px;
 }
 @media only screen and (min-width: 750px) {
-  .services-con .stack .mongodb {
+  .services-co .stack .mongodb {
     font-size: 50px;
   }
 }
-.services-con .stack .css {
+.services-co .stack .css {
   top: 47%;
 }
-.services-con .stack .html {
+.services-co .stack .html {
   left: 47%;
 }/*# sourceMappingURL=PortfolioStyle.css.map */

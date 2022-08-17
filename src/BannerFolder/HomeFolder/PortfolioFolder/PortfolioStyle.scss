@@ -61,18 +61,19 @@ $special-Color: #4c5eff;
   }
 }
 
-.services-con {
+.services-co {
   margin: 0 auto;
   margin-top: 100px;
   width: 100%;
   max-width: 2400px;
   background-color: rgba(13, 21, 34, 0);
 
-  .services {
-    font-size: 10px;
+  .service {
+    font-size: 15px;
+    @include flexDisplay(space-around, top, row);
 
     @include responsive(bigphone) {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
   .what-i-do {
@@ -96,30 +97,24 @@ $special-Color: #4c5eff;
     width: 90%;
     margin: 0 auto;
 
-    .serviceCard {
+    .serviceCar {
       @include flexDisplay(center, top, column);
-      border: 1px solid royalblue;
+      border: 1px solid rgba(65, 105, 225, 0.36);
       background-color: rgba(13, 21, 34, 0.694);
       box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
       border-radius: 5px;
-      width: 40%;
+      width: 45%;
       margin-bottom: auto;
       text-align: center;
       padding: 5px 0;
       transition: all 0.3s linear;
 
-      &:hover {
-        transform: scale(1.2);
-        border: 2px solid royalblue;
-        background-color: rgba(26, 41, 66, 0.838);
-      }
 
       @include responsive(bigphone) {
-        width: 35%;
+        width: 45%;
         max-width: 400px;
-        height: 200px;
         border-radius: 10px;
-        padding: 5px 10px;
+        padding: 10px 10px;
       }
 
       h1 {
@@ -136,15 +131,6 @@ $special-Color: #4c5eff;
           font-size: 20px;
         }
       }
-    }
-
-    .project {
-      border: 2px solid red;
-      background: url(/src/images/e-com.png) center;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-     
     }
   }
   .tech-stack {
