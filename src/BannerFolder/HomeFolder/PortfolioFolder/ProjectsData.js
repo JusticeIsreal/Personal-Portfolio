@@ -2,8 +2,7 @@ const Projects = [
   {
     id: 1,
     project: "JNIZ TEETH CARE",
-    //  img: "../../../../src/images/drone-app.png",
-    img: "../images/jniz-care.png",
+    img: "/images/jniz.png",
     source_code: "https://github.com/JusticeIsreal/Jeniz-Teeth-Whitening.git",
     live_project: "https://jnizteethcare.netlify.app/",
     details:
@@ -12,7 +11,7 @@ const Projects = [
   {
     id: 2,
     project: "E-COMMERCE",
-    img: "../images/e-com.png",
+    img: "/images/e-com.png",
     source_code: "https://github.com/JusticeIsreal/E-commerce.git",
     live_project: "http://justiceecom.netlify.app",
     details:
