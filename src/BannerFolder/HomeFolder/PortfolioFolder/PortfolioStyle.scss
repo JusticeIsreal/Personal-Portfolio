@@ -141,6 +141,7 @@ $special-Color: #4c5eff;
 
           &:hover {
             transform: scale(1);
+            background-color: rgba(42, 67, 107, 0.694);
           }
         }
         .project-description {
@@ -174,9 +175,18 @@ $special-Color: #4c5eff;
             background-color: rgba(13, 21, 34, 0.694);
             box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
             border: 1px solid rgba(65, 105, 225, 0.36);
+            transition: all 0.2s linear;
 
+            &:hover {
+              transform: scale(1.1);
+              background-color: rgba(42, 67, 107, 0.694);
+            }
             @include responsive(bigphone) {
               width: 40%;
+
+              &:hover {
+                transform: scale(1.1);
+              }
             }
           }
         }
