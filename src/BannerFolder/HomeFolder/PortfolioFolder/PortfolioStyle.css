@@ -83,6 +83,7 @@
 }
 .Portfolio-con .myProjectCon .projectCard img {
   opacity: 0.5;
+  height: 100%;
 }
 .Portfolio-con .myProjectCon .projectCard:hover .project-img {
   opacity: 1;

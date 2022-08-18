@@ -7,6 +7,7 @@ import "./Home.css";
 import cv from "../../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 
 function Home() {
+ 
   return (
     <main>
       <div className="i-am">
