@@ -85,7 +85,7 @@ main {
     gap: 10px;
     width: 100%;
     padding: 10px;
-     color: rgb(114, 150, 226);
+    color: rgb(114, 150, 226);
     @include flexDisplay(space-between, center, column);
 
     @include responsive(tablet) {
@@ -217,5 +217,14 @@ main {
     .last {
       margin-top: 50px;
     }
+  }
+  .footer {
+    @include flexDisplay(center, center, row);
+    color: rgb(150, 171, 217);
+    background-color: rgba(13, 21, 34, 0.929);
+    box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+    border-top: 1px solid rgba(65, 105, 225, 0.36);
+    border-bottom: 1px solid rgba(65, 105, 225, 0.36);
+    padding: 5px 0;
   }
 }

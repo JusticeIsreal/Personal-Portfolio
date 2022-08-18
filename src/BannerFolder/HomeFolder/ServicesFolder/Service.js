@@ -12,7 +12,7 @@ function Service() {
   return (
     <main className=" services-con">
       <div className=" services">
-        <h3>{"//003.    .     <p> SERVICES ? </p>"}</h3>
+        <h3 id="Services">{"//003.    .     <p> SERVICES ? </p>"}</h3>
       </div>
       <div className="what-i-do">
         <h3>What I do :</h3>

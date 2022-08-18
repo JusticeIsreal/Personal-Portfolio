@@ -78,6 +78,7 @@ section {
     overflow-y: scroll;
     background-size: 150%;
     background-color: black;
+    
 
     .ban {
       @include flexDisplay(space-around, center, row);

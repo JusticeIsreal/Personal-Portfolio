@@ -1,14 +1,10 @@
-import { useState } from "react";
-
 import "./FormStyle.css";
 
 function Form() {
-  const [data, setData] = useState([]);
-
   return (
     <main className=" Portfolio-con">
       <div className="Portfolio">
-        <h3>{"//004.    .     <p> SEND A MESSAGE  </p>"}</h3>
+        <h3 id="Contact">{"//004.    .     <p> SEND A MESSAGE  </p>"}</h3>
       </div>
       <div className="project">
         <h3>Contact :</h3>
@@ -24,5 +20,4 @@ function Form() {
     </main>
   );
 }
-
 export default Form;

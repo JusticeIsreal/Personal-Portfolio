@@ -22,7 +22,7 @@ function About() {
   return (
     <main className="aboutMe">
       <div className="aboutMe-container">
-        <h3>{"//002.    .     <p> ABOUT ME ? </p>"}</h3>
+        <h3 id="About">{"//002.    .     <p> ABOUT ME  </p>"}</h3>
       </div>
       <div className="mappedHeading">
         <h3>MyPitch :</h3>

@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import "./TopbarStyle.css";
 import reducer from "../Reducer/Reducer";
+import { Link } from "react-router-dom";
 
 const initialState = {
   menuShow: false,
@@ -34,13 +35,21 @@ function Topbar() {
   return (
     <section className="first">
       <div className="topbar">
-        <h3> Justice </h3>
+        <h3> AJIS </h3>
         <nav>
           <ul className={`${state.menuShow ? "openMenu" : "closeMenu"}`}>
-            <li>About</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <a href="#About">
+              <li>About</li>
+            </a>
+            <a href="#Services">
+              <li>Services</li>
+            </a>
+            <a href="#Portfolio">
+              <li>Portfolio</li>
+            </a>
+            <a href="#Contact">
+              <li>Contact</li>
+            </a>
           </ul>
         </nav>
         <div className="social-media">

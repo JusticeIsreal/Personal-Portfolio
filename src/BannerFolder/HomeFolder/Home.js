@@ -15,9 +15,7 @@ function Home() {
       <div className="name">
         <div className="name-details">
           <div className="h1Tag">
-            <a href="#gg">
-              <p>{"<h1>"}</p>
-            </a>
+            <p>{"<h1>"}</p>
           </div>
           <div className="full-name">
             <h3>JUSTICE ISREAL</h3>
@@ -41,6 +39,9 @@ function Home() {
       <Service />
       <Portfolio />
       <Form />
+      <footer className="footer">
+        Copyright &copy; {`${new Date().getFullYear()}`} JUSTICE ISREAL AGBONMA
+      </footer>
     </main>
   );
 }

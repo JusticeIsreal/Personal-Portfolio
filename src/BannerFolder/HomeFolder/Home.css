@@ -185,4 +185,16 @@ main .name .button-29:active {
 }
 main .i-am .last {
   margin-top: 50px;
+}
+main .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(150, 171, 217);
+  background-color: rgba(13, 21, 34, 0.929);
+  box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+  border-top: 1px solid rgba(65, 105, 225, 0.36);
+  border-bottom: 1px solid rgba(65, 105, 225, 0.36);
+  padding: 5px 0;
 }/*# sourceMappingURL=Home.css.map */
