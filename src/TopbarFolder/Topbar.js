@@ -54,10 +54,21 @@ function Topbar() {
         </nav>
         <div className="social-media">
           <li>
-            <FaGithubSquare className="social-icon git" />
-            <FaLinkedin className="social-icon linkedin" />
-            <FaMailBulk className="social-icon mail" />
-            <FaFacebookSquare className="social-icon fb" />
+            <a href="https://github.com/JusticeIsreal" target="blank">
+              <FaGithubSquare className="social-icon git" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/justice-isreal-agbonma-314bbb188/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BfvAOUKn7RO2bADRrc36z8g%3D%3D"
+              target="blank"
+            >
+              <FaLinkedin className="social-icon linkedin" />
+            </a>
+            <a href="https://justiceyba@gmail.com" target="blank">
+              <FaMailBulk className="social-icon mail" />
+            </a>
+            <a href="https://www.facebook.com/justice.agbonma" target="blank">
+              <FaFacebookSquare className="social-icon fb" />
+            </a>
           </li>
           <div className="social-media-follow-me">
             <p>CONNECT</p>
