@@ -114,11 +114,24 @@ $special-Color: #4c5eff;
         border-radius: 10px;
         padding: 10px 10px;
       }
-      img {
-        opacity: 0.5;
-        height: 100%;
-        // border: 2px solid red;
+
+      .img-con {
+        border: 1px solid rgba(65, 105, 225, 0.36);
+        height: 100px;
+        width: 100%;
+        object-fit: contain;
+        img {
+          opacity: 0.5;
+
+          height: 100%;
+          width: 100%;
+          // border: 2px solid red;
+        }
+        @include responsive(bigphone) {
+          height: 200px;
+        }
       }
+
       &:hover {
         .project-img {
           opacity: 1;

@@ -20,7 +20,9 @@ function Portfolio() {
           return (
             <div key={id} className="projectCard">
               <h3 className="project-name">{project}</h3>
-              <img src={img} alt={project} className="project-img" />
+              <div className="img-con">
+                <img src={img} alt={project} className="project-img" />
+              </div>
               <details className="details">
                 <summary className="view-project">view project</summary>
                 <p className="project-description">{details}</p>
