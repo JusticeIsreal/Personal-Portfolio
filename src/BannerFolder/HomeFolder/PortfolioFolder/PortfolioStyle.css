@@ -107,10 +107,16 @@
   width: 95%;
   cursor: pointer;
   transition: all 0.2s linear;
+  font-size: 13px;
 }
 .Portfolio-con .myProjectCon .projectCard .details .view-project:hover {
   transform: scale(1);
   background-color: rgba(42, 67, 107, 0.694);
+}
+@media only screen and (min-width: 750px) {
+  .Portfolio-con .myProjectCon .projectCard .details .view-project {
+    font-size: 17px;
+  }
 }
 .Portfolio-con .myProjectCon .projectCard .details .project-description {
   margin: 10px 0;
@@ -151,6 +157,7 @@
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   border: 1px solid rgba(65, 105, 225, 0.36);
   transition: all 0.2s linear;
+  font-size: 10px;
 }
 .Portfolio-con .myProjectCon .projectCard .details .project-link a:hover {
   transform: scale(1.1);
@@ -158,6 +165,7 @@
 }
 @media only screen and (min-width: 750px) {
   .Portfolio-con .myProjectCon .projectCard .details .project-link a {
+    font-size: 13px;
     width: 40%;
   }
   .Portfolio-con .myProjectCon .projectCard .details .project-link a:hover {
