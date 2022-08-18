@@ -35,7 +35,9 @@ function Topbar() {
   return (
     <section className="first">
       <div className="topbar">
-        <h3> AJIS </h3>
+        <a href="/">
+          <h3> AJIS </h3>
+        </a>
         <nav>
           <ul className={`${state.menuShow ? "openMenu" : "closeMenu"}`}>
             <a href="#About">
