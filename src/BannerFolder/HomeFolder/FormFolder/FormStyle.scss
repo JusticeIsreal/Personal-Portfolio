@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+// global variables
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+  // font-family: poppins;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
+
+// GLOBAL STYLES
+$shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.301);
+$border: 2px solid rgb(214, 214, 214);
+$cardsj-bg: rgb(224, 223, 230);
+$hover-Color: whitesmoke;
+$hover-Text-Color: #444444;
+$text-Color: rgb(68, 68, 68);
+$special-text-Color: royalblue;
+$special-Color: #4c5eff;
+
+@mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
+  display: flex;
+  justify-content: $justifyProp;
+  align-items: $alignProp;
+  flex-direction: $flexDirection;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==smallPhone {
+    @media only screen and (max-width: 300px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 850px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bigphone {
+    @media only screen and (min-width: 750px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+}
+
+.Portfolio-con {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 2400px;
+  background-color: rgba(13, 21, 34, 0);
+
+  .Portfolio {
+    font-size: 15px;
+    @include flexDisplay(space-around, top, row);
+
+    @include responsive(bigphone) {
+      font-size: 25px;
+    }
+  }
+  .project {
+    width: 90%;
+    padding: 15px;
+    margin-top: 30px;
+
+    @include responsive(bigphone) {
+      font-size: 20px;
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 80%;
+    }
+  }
+}
+
+.form-con {
+  border: 1px solid rgba(65, 105, 225, 0.574);
+  background-color: rgba(13, 21, 34, 0.694);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 5px;
+  @include responsive(bigphone) {
+    width: 700px;
+  }
+
+  form {
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+    @include flexDisplay(center, center, column);
+
+    input {
+      border: 1px solid rgba(65, 105, 225, 0.36);
+      background-color: rgba(13, 21, 34, 0.694);
+      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+      color: rgb(150, 171, 217);
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba(65, 105, 225, 0.36);
+      background-color: rgba(13, 21, 34, 0.694);
+      box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
+      color: rgb(150, 171, 217);
+    }
+    button {
+      border: 1px solid rgba(65, 105, 225, 0.574);
+      background-color: rgba(13, 21, 34, 0.694);
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+      border-radius: 5px;
+      color: rgb(150, 171, 217);
+      width: 50%;
+      height: 50px;
+
+      &:hover {
+       background-color: rgba(45, 71, 113, 0.694); 
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import About from "./AboutFolder/About.js";
 import Service from "./ServicesFolder/Service.js";
 import Portfolio from "./PortfolioFolder/Portfolio.js";
+import Form from "./FormFolder/Form.js";
 import "./Home.css";
 import cv from "../../images/JUSTICE_ISREAL_AGBONMA_CV.pdf";
 
@@ -14,7 +15,9 @@ function Home() {
       <div className="name">
         <div className="name-details">
           <div className="h1Tag">
-            <p>{"<h1>"}</p>
+            <a href="#gg">
+              <p>{"<h1>"}</p>
+            </a>
           </div>
           <div className="full-name">
             <h3>JUSTICE ISREAL</h3>
@@ -37,6 +40,7 @@ function Home() {
       <About />
       <Service />
       <Portfolio />
+      <Form />
     </main>
   );
 }

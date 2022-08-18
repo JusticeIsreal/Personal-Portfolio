@@ -92,7 +92,7 @@ $special-Color: #4c5eff;
   .myProjectCon {
     @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     background-color: rgba(13, 21, 34, 0);
     width: 90%;
     margin: 0 auto;
@@ -113,6 +113,14 @@ $special-Color: #4c5eff;
         max-width: 400px;
         border-radius: 10px;
         padding: 10px 10px;
+      }
+      img {
+        opacity: 0.5;
+      }
+      &:hover {
+        .project-img {
+          opacity: 1;
+        }
       }
       .project-name {
         font-size: 10px;
@@ -207,8 +215,6 @@ $special-Color: #4c5eff;
     p {
       font-size: 13px;
       color: rgb(150, 171, 217);
-      // word-spacing: 5px;
-      // letter-spacing: 3px;
 
       @include responsive(bigphone) {
         font-size: 17px;

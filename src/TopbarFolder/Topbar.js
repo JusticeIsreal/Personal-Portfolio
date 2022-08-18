@@ -38,8 +38,8 @@ function Topbar() {
         <nav>
           <ul className={`${state.menuShow ? "openMenu" : "closeMenu"}`}>
             <li>About</li>
-            <li>Education</li>
-            <li>Skill</li>
+            <li>Services</li>
+            <li>Portfolio</li>
             <li>Contact</li>
           </ul>
         </nav>

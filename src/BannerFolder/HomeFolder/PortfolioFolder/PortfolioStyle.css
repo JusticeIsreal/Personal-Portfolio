@@ -54,7 +54,7 @@
   align-items: top;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   background-color: rgba(13, 21, 34, 0);
   width: 90%;
   margin: 0 auto;
@@ -80,6 +80,12 @@
     border-radius: 10px;
     padding: 10px 10px;
   }
+}
+.Portfolio-con .myProjectCon .projectCard img {
+  opacity: 0.5;
+}
+.Portfolio-con .myProjectCon .projectCard:hover .project-img {
+  opacity: 1;
 }
 .Portfolio-con .myProjectCon .projectCard .project-name {
   font-size: 10px;
