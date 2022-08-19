@@ -125,7 +125,7 @@ $special-Color: #4c5eff;
           opacity: 0.5;
           height: 100%;
           width: 100%;
-         
+         object-fit: cover;
         }
         @include responsive(bigphone) {
           height: 200px;
