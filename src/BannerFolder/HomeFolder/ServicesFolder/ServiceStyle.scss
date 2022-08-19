@@ -93,7 +93,7 @@ $special-Color: #4c5eff;
   .myServicesCon {
     @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
-    gap: 30px;
+    // gap: 30px;
     background-color: rgba(13, 21, 34, 0);
     width: 90%;
     margin: 0 auto;
@@ -108,6 +108,7 @@ $special-Color: #4c5eff;
       text-align: center;
       padding: 5px 0;
       transition: all 0.3s linear;
+      margin: 10px;
 
       &:hover {
         transform: scale(1.2);

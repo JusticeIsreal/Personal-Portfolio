@@ -93,7 +93,7 @@ $special-Color: #4c5eff;
     @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
     // gap: 50px;
-    
+
     background-color: rgba(13, 21, 34, 0);
     width: 100%;
     margin: 0 auto;
@@ -106,16 +106,17 @@ $special-Color: #4c5eff;
       box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
       border-radius: 5px;
       width: 40%;
-      margin-bottom: auto;
+      // margin-bottom: auto;
       text-align: center;
       padding: 5px;
       margin: 10px;
+      // height: 60px;
 
       @include responsive(bigphone) {
         width: 45%;
         max-width: 400px;
         border-radius: 10px;
-        padding: 10px 10px;
+        padding: 5px 10px;
       }
 
       .img-con {
@@ -126,7 +127,7 @@ $special-Color: #4c5eff;
           opacity: 0.5;
           height: 100%;
           width: 100%;
-         object-fit: cover;
+          object-fit: cover;
         }
         @include responsive(bigphone) {
           height: 200px;
@@ -147,77 +148,38 @@ $special-Color: #4c5eff;
         }
       }
 
-      .details {
-        .view-project {
-          margin: 0 auto;
-          margin-top: 10px;
-          padding: 5px 0;
+      .project-link {
+        @include flexDisplay(space-between, center, column);
+        padding: 5px 0;
+        margin: 5px;
+
+        font-size: 10px;
+        @include responsive(bigphone) {
+          @include flexDisplay(space-around, center, row);
+        }
+
+        a {
+          width: 90%;
+          padding: 5px;
+          border-radius: 5px;
+          color: rgba(150, 171, 217, 0.632);
           background-color: rgba(13, 21, 34, 0.694);
           box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
           border: 1px solid rgba(65, 105, 225, 0.36);
-          border-radius: 10px;
-          color: rgb(150, 171, 217);
-          @include flexDisplay(center, center, row);
-          transform: scale(0.9);
-          width: 95%;
-          cursor: pointer;
           transition: all 0.2s linear;
-          font-size: 13px;
+          font-size: 10px;
+          margin: 5px;
 
           &:hover {
-            transform: scale(1);
+            transform: scale(1.1);
             background-color: rgba(42, 67, 107, 0.694);
           }
           @include responsive(bigphone) {
-            font-size: 17px;
-          }
-        }
-        .project-description {
-          margin: 10px 0;
-          word-spacing: 2px;
-          line-height: 15px;
-          font-size: 10px;
-          color: rgb(150, 171, 217);
-
-          @include responsive(bigphone) {
-            line-height: 15px;
-            word-spacing: 5px;
-          }
-        }
-
-        .project-link {
-          @include flexDisplay(space-between, center, column);
-          padding: 5px 0;
-          gap: 10px;
-
-
-          font-size: 10px;
-          @include responsive(bigphone) {
-            @include flexDisplay(space-around, center, row);
-          }
-
-          a {
-            width: 90%;
-            padding: 5px;
-            border-radius: 5px;
-            color: rgba(150, 171, 217, 0.632);
-            background-color: rgba(13, 21, 34, 0.694);
-            box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
-            border: 1px solid rgba(65, 105, 225, 0.36);
-            transition: all 0.2s linear;
-            font-size: 10px;
+            font-size: 13px;
+            width: 40%;
 
             &:hover {
               transform: scale(1.1);
-              background-color: rgba(42, 67, 107, 0.694);
-            }
-            @include responsive(bigphone) {
-              font-size: 13px;
-              width: 40%;
-
-              &:hover {
-                transform: scale(1.1);
-              }
             }
           }
         }

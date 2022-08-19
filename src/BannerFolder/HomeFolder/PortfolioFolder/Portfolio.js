@@ -23,19 +23,15 @@ function Portfolio() {
               <div className="img-con">
                 <img src={img} alt={project} className="project-img" />
               </div>
-              <details className="details">
-                <summary className="view-project">view project</summary>
-                <p className="project-description">{details}</p>
-
-                <div className="project-link">
-                  <a href={source_code} target="blank" className="source-code">
-                    SOURCE CODE
-                  </a>
-                  <a href={live_project} target="blank" className="live-site">
-                    LIVE SITE
-                  </a>
-                </div>
-              </details>
+             
+              <div className="project-link">
+                <a href={source_code} target="blank" className="source-code">
+                  SOURCE CODE
+                </a>
+                <a href={live_project} target="blank" className="live-site">
+                  LIVE SITE
+                </a>
+              </div>
             </div>
           );
         })}

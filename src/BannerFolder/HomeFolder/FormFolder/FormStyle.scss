@@ -106,7 +106,7 @@ $special-Color: #4c5eff;
     padding: 5px;
     width: 90%;
     margin: 0 auto;
-    gap: 20px;
+    // gap: 20px;
     @include flexDisplay(center, center, column);
 
     input {
@@ -118,6 +118,7 @@ $special-Color: #4c5eff;
       height: 50px;
       border-radius: 5px;
       padding: 0 10px;
+      margin: 10px;
     }
     textarea {
       width: 100%;
@@ -135,6 +136,7 @@ $special-Color: #4c5eff;
       color: rgb(150, 171, 217);
       width: 50%;
       height: 50px;
+      margin: 10px;
 
       &:hover {
        background-color: rgba(45, 71, 113, 0.694); 

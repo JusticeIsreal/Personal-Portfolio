@@ -54,7 +54,6 @@
   align-items: top;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
   background-color: rgba(13, 21, 34, 0);
   width: 90%;
   margin: 0 auto;
@@ -73,6 +72,7 @@
   text-align: center;
   padding: 5px 0;
   transition: all 0.3s linear;
+  margin: 10px;
 }
 .services-con .myServicesCon .serviceCard:hover {
   transform: scale(1.2);
