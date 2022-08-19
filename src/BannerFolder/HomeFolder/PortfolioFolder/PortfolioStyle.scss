@@ -92,7 +92,7 @@ $special-Color: #4c5eff;
   .myProjectCon {
     @include flexDisplay(space-around, top, row);
     flex-wrap: wrap;
-    gap: 50px;
+    // gap: 50px;
     
     background-color: rgba(13, 21, 34, 0);
     width: 100%;
@@ -109,6 +109,7 @@ $special-Color: #4c5eff;
       margin-bottom: auto;
       text-align: center;
       padding: 5px;
+      margin: 10px;
 
       @include responsive(bigphone) {
         width: 45%;
