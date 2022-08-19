@@ -174,10 +174,12 @@ $special-Color: #4c5eff;
       @include flexDisplay(center, center, column);
       position: absolute;
       right: 0;
-      top: 8rem;
+      top: 6rem;
       height: 140px;
       width: 80px;
       position: fixed;
+      // border: 2px solid red;
+      height: 200px;
 
       //   desktop and tablet view
       @include responsive(tablet) {
