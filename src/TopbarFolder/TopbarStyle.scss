@@ -178,8 +178,8 @@ $special-Color: #4c5eff;
       height: 140px;
       width: 80px;
       position: fixed;
-       border: 2px solid red;
-      height: 200px;
+      //  border: 2px solid red;
+      height: 260px;
 
       //   desktop and tablet view
       @include responsive(tablet) {
@@ -196,7 +196,7 @@ $special-Color: #4c5eff;
         border-radius: 8px;
         margin-bottom: auto;
         width: 80%;
-        height: 150%;
+        height: 190%;
         // gap: 20px;
         padding: 5px 5px 45px 5px;
         border: 1px solid rgba(65, 105, 225, 0.255);
