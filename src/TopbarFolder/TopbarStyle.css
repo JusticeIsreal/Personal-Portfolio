@@ -157,7 +157,6 @@
   border-radius: 8px;
   margin-bottom: auto;
   width: 80%;
-  gap: 20px;
   padding: 5px 5px 45px 5px;
   border: 1px solid rgba(65, 105, 225, 0.255);
 }
@@ -165,6 +164,7 @@
   font-size: 20px;
   transition: all 0.2s linear;
   color: rgb(150, 171, 217);
+  margin: 8px;
 }
 .first .topbar .social-media li .social-icon:hover {
   transform: scale(1.5);
