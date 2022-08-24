@@ -46,6 +46,13 @@ const Projects = [
     details:
       "Our App-Based Click & Diagnose product provides you with the most recent and reliable medical diagnoses and prescrition wherever you are.",
   },
+  {
+    id: 6,
+    project: "JAYFLIX MOVIE APP",
+    img: "/images/jayflix.png",
+    source_code: "https://github.com/JusticeIsreal/JAYFLIX-MOVIE-APP.git",
+    live_project: "https://jayflix-movie-app.vercel.app/",
+  },
 ];
 
 export default Projects;
