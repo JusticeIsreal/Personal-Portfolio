@@ -73,7 +73,7 @@ section {
     display: flex;
     justify-content: space-around;
     height: 90vh;
-    background: url(/src/images/PortfolioBg.jpg) fixed top;
+    background: url("https://res.cloudinary.com/isreal/image/upload/v1661847047/My%20portfolio%20Project/PortfolioBg_fyio4y.jpg") fixed top;
     background-repeat: no-repeat;
     overflow-y: scroll;
     background-size: 150%;
@@ -158,7 +158,7 @@ section {
 
     @include responsive(tablet) {
       height: 90vh;
-      background: url(/src/images/PortfolioBg.jpg) fixed top;
+      background: url("https://res.cloudinary.com/isreal/image/upload/v1661847047/My%20portfolio%20Project/PortfolioBg_fyio4y.jpg") fixed top;
       background-repeat: no-repeat;
       background-size: contain;
       // opacity: 0.6;

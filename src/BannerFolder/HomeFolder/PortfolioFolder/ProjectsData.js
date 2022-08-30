@@ -2,7 +2,7 @@ const Projects = [
   {
     id: 1,
     project: "JNIZ TEETH CARE",
-    img: "/images/jniz.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847017/My%20portfolio%20Project/Jniz-care_pydzbm.png",
     source_code: "https://github.com/JusticeIsreal/Jeniz-Teeth-Whitening.git",
     live_project: "https://jnizteethcare.netlify.app/",
     details:
@@ -11,7 +11,7 @@ const Projects = [
   {
     id: 2,
     project: "E-COMMERCE",
-    img: "/images/e-com.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847013/My%20portfolio%20Project/e-com_yfkzhl.png",
     source_code: "https://github.com/JusticeIsreal/E-commerce.git",
     live_project: "http://justiceecom.netlify.app",
     details:
@@ -20,7 +20,7 @@ const Projects = [
   {
     id: 3,
     project: "PERIODIC TABLE",
-    img: "/images/periodic-table.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847045/My%20portfolio%20Project/periodic-table_c20jxk.png",
     source_code:
       "https://github.com/JusticeIsreal/Periodic-table-with-CSS-grid.git",
     live_project: "https://justiceperiodictable.netlify.app/",
@@ -30,7 +30,7 @@ const Projects = [
   {
     id: 4,
     project: "AJIS TECHNOLOGY",
-    img: "/images/drone-app.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661846998/My%20portfolio%20Project/drone-app_fvk1yy.png",
     source_code:
       "https://github.com/JusticeIsreal/Drone-Rental-Services-Company.git",
     live_project: "https://justicedronecompany.netlify.app/",
@@ -40,7 +40,7 @@ const Projects = [
   {
     id: 5,
     project: "MEDICAL DIAGNOSIS",
-    img: "/images/medical-app.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847041/My%20portfolio%20Project/medical-app_m4t1di.png",
     source_code: "/",
     live_project: "https://brilliant-beijinho-78dad5.netlify.app/",
     details:
@@ -49,7 +49,7 @@ const Projects = [
   {
     id: 6,
     project: "JAYFLIX MOVIE APP",
-    img: "/images/jayflix.png",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847636/My%20portfolio%20Project/jayflix_ysaoce.png",
     source_code: "https://github.com/JusticeIsreal/JAYFLIX-MOVIE-APP.git",
     live_project: "https://jayflix-movie-app.vercel.app/",
   },

@@ -67,7 +67,8 @@
   background-color: rgba(13, 21, 34, 0.694);
   box-shadow: 5px 5px 30px rgba(40, 82, 189, 0.263);
   border-radius: 5px;
-  width: 40%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   padding: 5px;
   margin: 10px;
@@ -82,7 +83,7 @@
 }
 .Portfolio-con .myProjectCon .projectCard .img-con {
   border: 1px solid rgba(65, 105, 225, 0.36);
-  height: 100px;
+  height: 100%;
   width: 100%;
 }
 .Portfolio-con .myProjectCon .projectCard .img-con img {
@@ -128,7 +129,7 @@
 }
 .Portfolio-con .myProjectCon .projectCard .project-link a {
   width: 90%;
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
   color: rgba(150, 171, 217, 0.632);
   background-color: rgba(13, 21, 34, 0.694);
