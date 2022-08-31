@@ -72,7 +72,7 @@
   text-align: center;
   padding: 5px 0;
   transition: all 0.3s linear;
-  margin: 10px;
+  margin: 15px;
 }
 .services-con .myServicesCon .serviceCard:hover {
   transform: scale(1.2);
