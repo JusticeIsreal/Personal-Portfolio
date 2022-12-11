@@ -1,8 +1,8 @@
 import React from "react";
-// import Banner from "./BannerFolder/Banner";
-// import Topbar from "./TopbarFolder/Topbar";
+import Banner from "./BannerFolder/Banner";
+import Topbar from "./TopbarFolder/Topbar";
 import "./App.css";
-import General from "./component/General";
+
 // import { CgBattery } from "react-icons/cg";
 // import About from "./AboutFolder/About";
 
@@ -43,9 +43,9 @@ function App() {
       {/* <p>{`${navigator.userAgent}`}</p>
       <p>{`${navigator.appVersion}`}</p>
       <CgBattery /> */}
-      {/* <Topbar />
-      <Banner /> */}
-     <General />
+      <Topbar />
+      <Banner />
+    
     </div>
   );
 }

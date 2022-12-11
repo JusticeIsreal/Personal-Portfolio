@@ -1,5 +1,13 @@
 const Projects = [
   {
+    id: 6,
+    project: "JAYFLIX MOVIE APP",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1661847636/My%20portfolio%20Project/jayflix_ysaoce.png",
+    source_code: "https://github.com/JusticeIsreal/JAYFLIX-MOVIE-APP.git",
+    live_project: "https://jayflix-movie-app.vercel.app/",
+  },
+
+  {
     id: 1,
     project: "JNIZ TEETH CARE",
     img: "https://res.cloudinary.com/isreal/image/upload/v1661847017/My%20portfolio%20Project/Jniz-care_pydzbm.png",
@@ -7,6 +15,15 @@ const Projects = [
     live_project: "https://jnizteethcare.netlify.app/",
     details:
       "I built this website for a US based Teeth Whitening Company ( JENIZ TEETH WHITENING ) . The company had a problem getting bookings for appointments from clients and they needed a website that could help their clients make and book reservations . I was able to do this using JavaScript form validation .",
+  },
+  {
+    id: 7,
+    project: "FINANCIAL MANAGEMENT",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1670800679/My%20portfolio%20Project/Screenshot_2022-12-12_at_00.01.53_fpef0t.png",
+    source_code: "https://github.com/JusticeIsreal/Savings-App.git",
+    live_project: "https://savings-1w513jk1u-justiceisreal.vercel.app/",
+    details:
+      "This project is a sample e-commerce store for small scale businesses. You’d first assess an admin page , this page allows you add product to the store, Pick a category in which the product falls under, Pick a class the product falls under , Select a price and quantity available. edit existing products delete product from store y toggling the side top menu (on mobile view ) you can assess the “Client page “ using the “client page button” The you’d see all the products you have imputes from the admin page . You can filter the product based on their category ranging from household items to electronics and class ranging from promo to new arrival.",
   },
   {
     id: 2,
@@ -24,6 +41,15 @@ const Projects = [
     source_code:
       "https://github.com/JusticeIsreal/Periodic-table-with-CSS-grid.git",
     live_project: "https://justiceperiodictable.netlify.app/",
+    details:
+      "This project would develop0ed as a means to proferr solution to seondary school childreen who find it difficult to asccess tghe elemments of the periodic table",
+  },
+  {
+    id: 8,
+    project: "AJIS WEBSITE",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1670800687/My%20portfolio%20Project/Screenshot_2022-12-12_at_00.01.18_n0do8p.png",
+    source_code: "https://github.com/JusticeIsreal/Ajis-official-website.git",
+    live_project: "",
     details:
       "This project would develop0ed as a means to proferr solution to seondary school childreen who find it difficult to asccess tghe elemments of the periodic table",
   },
@@ -47,11 +73,14 @@ const Projects = [
       "Our App-Based Click & Diagnose product provides you with the most recent and reliable medical diagnoses and prescrition wherever you are.",
   },
   {
-    id: 6,
-    project: "JAYFLIX MOVIE APP",
-    img: "https://res.cloudinary.com/isreal/image/upload/v1661847636/My%20portfolio%20Project/jayflix_ysaoce.png",
-    source_code: "https://github.com/JusticeIsreal/JAYFLIX-MOVIE-APP.git",
-    live_project: "https://jayflix-movie-app.vercel.app/",
+    id: 9,
+    project: "DIGITAL IV",
+    img: "https://res.cloudinary.com/isreal/image/upload/v1670800770/My%20portfolio%20Project/Screenshot_2022-12-12_at_00.19.10_m1el4x.png",
+    source_code:
+      "https://github.com/JusticeIsreal/Digital-wedding-invitation.git",
+    live_project: "https://jj2022.vercel.app/",
+    details:
+      "Our App-Based Click & Diagnose product provides you with the most recent and reliable medical diagnoses and prescrition wherever you are.",
   },
 ];
 
