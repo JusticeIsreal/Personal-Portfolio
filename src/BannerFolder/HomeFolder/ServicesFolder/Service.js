@@ -48,13 +48,13 @@ function Service() {
           <h1>
             <AiOutlineLineChart />
           </h1>
-          <p>Project Management</p>
+          <p>Project Management & Marketing</p>
         </div>
         <div className="serviceCard">
           <h1>
             <CgFigma />
           </h1>
-          <p>UI / UX</p>
+          <p>UI / UX / GRAPHIC DESIGN</p>
         </div>
       </div>
       <div className="stack">
